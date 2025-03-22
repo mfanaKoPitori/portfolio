@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="text-xl font-light justify-self-center justify-left mt-20 w-1/2 p-2">
+    <div className="text-xs md:text-md lg:text-lg">
+      <div className="font-light justify-self-center justify-left mt-20 w-1/2 p-2">
         <div className="flex justify-between align-middle">
           <span className="flex gap-x-4 items-center">
             <p>Hi, My name is Raymond Mawina</p>
@@ -35,17 +35,18 @@ export default function Home() {
 
         <div className="mt-16 flex justify-between gap-2">
           <div>
-            <p className="text-lg font-extralight">Want to work together on a project? <Link href="https://umbonocloud.com" className="text-purple-800 hover:text-purple-600">click here</Link></p>
-            <p className="text-lg font-extralight">Want to say hi or hire me? <Link href="https://umbonocloud.com" className="text-purple-800 hover:text-purple-600">click here</Link></p>
+            <p className="font-extralight">Want to work together on a project? <Link href="https://umbonocloud.com" className="text-purple-800 hover:text-purple-600">click here</Link></p>
+            <p className="font-extralight">Want to say hi or hire me? <Link href="https://umbonocloud.com" className="text-purple-800 hover:text-purple-600">click here</Link></p>
           </div>
+        </div>
 
-          <span className="flex items-center hover:gap-6 hover:scale-x transition-transform">
+        <div className="my-4 justify-self-end">
+          <span className="flex items-center gap-6 hover:scale-x transition-transform">
               <Link className="z-0 -m-1.5" href=""><Image src="./github_icon.svg" width={40} height={40} alt="github icon"/></Link>
               <Link className="z-10 -m-1.5" href=""><Image src="linkedin_icon.svg" width={40} height={40} alt="linkedin icon" /></Link>
               <Link className="z-20 -m-1.5" href=""><Image src="x_twitter_icon.svg" width={40} height={40} alt="x icon"/></Link>
           </span>
         </div>
-       
       </div>
       <div className="fixed top-1/2 right-7 -translate-y-1/2">
         <div className="rotate-270 origin-right">
