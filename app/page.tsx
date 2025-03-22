@@ -6,8 +6,7 @@ export default function Home() {
     <div className="mt-4 text-xs md:mt-6 md:text-md lg:text-lg">
       <div className="font-light justify-self-center justify-left w-1/2 p-2">
         <div className="flex justify-between align-middle">
-          <span className="flex gap-x-4 items-center">
-            <p>Hi, My name is Raymond Mawina</p>
+          <span className="grid sm:flex gap-x-4 items-center">
             <Image 
               src="/headshot.jpg"  
               width={70}
@@ -15,6 +14,7 @@ export default function Home() {
               alt="Picture of the author"
               className="rounded-full">
             </Image>
+            <p className="mt-2 sm:mt-0">Hi, My name is Raymond Mawina.</p>
           </span>
           
         </div>
