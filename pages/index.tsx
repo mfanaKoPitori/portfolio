@@ -40,7 +40,7 @@ export default function Home() {
           <h2 className="font-bold text-xl lg:text-2xl">Work Experience</h2>
           <section className="grid space-y-2 mx-4">
             <WorkExperience
-              companyName="umbono Cloud"
+              companyName="umbono cloud"
               role="Software Developer"
               imageName="/umbono_logo.webp"
               imageWidth={190}
