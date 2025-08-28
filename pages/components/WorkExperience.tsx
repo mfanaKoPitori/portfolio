@@ -22,45 +22,37 @@ export default function WorkExperience({
   skillsList,
 }: WorkExperienceProps) {
   return (
-    <div className="grid bg-gray-300/50 rounded-md">
-      <div className="space-y-2 p-4">
-        <span className="grid lg:flex lg:justify-between font-bold">
-          <div className="w-full grid lg:flex lg:justify-between space-y-2 lg:space-x-4 lg:align-baseline">
-            <div className="h-18 w-full lg:w-52  bg-black rounded-md justify-items-center">
-              <Image
-                src={imageName}
-                height={imageHeight}
-                width={imageWidth}
-                alt="umbono_logo"
-                className=" bg-black rounded-md p-1"
-              />
-            </div>
+    <section className="grid bg-gray-300/50 space-y-2 p-4 rounded-md">
+      <section className="w-full grid lg:flex lg:justify-between space-y-2 lg:space-x-4 lg:align-baseline">
+        <section className="h-18 w-full lg:w-52  bg-black rounded-md justify-items-center">
+          <Image
+            src={imageName}
+            height={imageHeight}
+            width={imageWidth}
+            alt="umbono_logo"
+            className=" bg-black rounded-md p-1"
+          />
+        </section>
 
-            <div className="font-bold text-xs lg:text-lg p-0">
-              <p className="p-0 m-0">{role}</p>
-              <p>{companyName}</p>
-              <p>{durationDur}</p>
-            </div>
-          </div>
-        </span>
+        <section className="font-bold text-xs lg:text-lg p-0">
+          <p className="p-0 m-0">{role}</p>
+          <p>{companyName}</p>
+          <p>{durationDur}</p>
+        </section>
+      </section>
 
-        <div className="grid">
-          <div className="flex flex-cols-2 bg-gray-300/60 rounded-md border-l-5 border-blue-400">
-            <p className="w-11/12 p-2 text-left">{workHighlights}</p>
-          </div>
-        </div>
+      <section className="flex flex-cols-2 bg-gray-300/60 rounded-md border-l-5 border-blue-400">
+        <p className="w-11/12 p-2 text-left">{workHighlights}</p>
+      </section>
 
-        <div className="flex">
-          <div className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs lg:text-lg font-bold border-l-5 border-blue-400">
-            <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
-              Tech Stack Tools
-            </h3>
-            <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900 text-xs lg:text-lg font-bold">
-              {skillsList}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs lg:text-lg font-bold border-l-5 border-blue-400">
+        <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
+          Tech Stack Tools
+        </h3>
+        <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900 text-xs lg:text-lg font-bold">
+          {skillsList}
+        </p>
+      </section>
+    </section>
   );
 }
