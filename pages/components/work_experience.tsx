@@ -24,11 +24,10 @@ export default function WorkExperience({
   skillsList,
 }: WorkExperienceProps) {
   return (
-    <div className="grid space-y-4 bg-gray-300/50 rounded-md">
-      <p className="bg-blue-300 h-2 rounded-t-md"></p>
-      <div className="px-4 mb-4 space-y-4">
-        <span className="grid space-y-2 lg:flex lg:justify-between font-bold">
-          <div className="grid space-y-2 lg:flex lg:space-x-4  lg:items-start">
+    <div className="grid bg-gray-300/50 rounded-md">
+      <div className="space-y-2 p-4">
+        <span className="grid lg:flex lg:justify-between font-bold">
+          <div className="grid lg:flex lg:space-x-4 lg:items-start">
             <div className="h-18 w-52 bg-black rounded-md p-1 justify-items-center">
               <Image
                 src={imageName}
@@ -51,7 +50,7 @@ export default function WorkExperience({
           </div>
         </span>
 
-        <div className="grid space-y-2">
+        <div className="grid">
           <div className="flex flex-cols-2 bg-gray-300/60 rounded-md">
             <p className="bg-blue-400 w-1.5 rounded-bl-md rounded-tl-md"></p>
             <p className="w-11/12 p-2 text-left">{workHighlights}</p>
@@ -61,7 +60,7 @@ export default function WorkExperience({
         <div className="flex">
           <p className="bg-blue-400 w-1.5 rounded-l-md"></p>
           <div className="grid w-full bg-gray-300/80 p-2 rounded-r-md space-x-1 text-sm lg:text-lg lg:text-md font-bold">
-            <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-t-md">
+            <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
               Skills
             </h3>
             <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900">

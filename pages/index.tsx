@@ -17,41 +17,50 @@ export default function Home() {
       <main className="grid space-y-4 p-4">
         <div className="grid space-y-2">
           <h2 className="font-bold text-xl lg:text-2xl">Biography</h2>
-          <p>
-            I am software developer based in Pretoria, South Africa. I love
-            thinking super hard to come up with solutions that solve problems.
-            When the solution approach is baked and ready, I write code to
-            implement and create the end-product.
-          </p>
+          <div className="space-y-2 mx-4">
+            <p>
+              I am software developer based in Pretoria, South Africa. I love
+              coming up with solutions that help solve problems.
+            </p>
+            <p>
+              When a solution approach is baked and ready, I write code to
+              implement and create the product.
+            </p>
+            <p>
+              When I am not trying to be technical wizard, I am probably
+              sleeping, walking the trails, or deep into a fictional/self-help
+              book.
+            </p>
+          </div>
         </div>
 
-        <div className="grid space-y-4">
+        <div className="grid space-y-2">
           <h2 className="font-bold text-xl lg:text-2xl">Work Experience</h2>
-          <WorkExperience
-            companyName="Umbono Cloud"
-            role="Software Developer"
-            imageName="/umbono_logo.webp"
-            imageWidth={190}
-            imageHeight={70}
-            durationDur="Aug 2025 - Present"
-            durationDesc="1 year 1 month"
-            workHighlights={`I develop and maintain full-stack web applications and CRM integrations, and integrating platforms like Call Cabinet, Microsoft D365, Matrix42, and Zoho.`}
-            skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, SQL,Python,
-                    Next.js, React"
-          />
+          <div className="grid space-y-2 mx-4">
+            <WorkExperience
+              companyName="Umbono Cloud"
+              role="Software Developer"
+              imageName="/umbono_logo.webp"
+              imageWidth={190}
+              imageHeight={70}
+              durationDur="Aug 2025 - Present"
+              durationDesc="1 year 2 months"
+              workHighlights={`I develop and maintain full-stack web applications and CRM integrations, and integrating platforms like Call Cabinet, Microsoft D365, Matrix42, and Zoho.`}
+              skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, Next.js, SQL, Python"
+            />
 
-          <WorkExperience
-            companyName="Umuzi"
-            role="Software Developer & SME"
-            imageName="/umuzi_logo.png"
-            imageWidth={70}
-            imageHeight={70}
-            durationDur="Jul 2024 - Aug 2025"
-            durationDesc="12 months"
-            workHighlights={`I collaborated on developing and maintaining a Django-based Kanban board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor and mentor teaching programming concepts through practical and problem-solving sessions.`}
-            skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, SQL,
-                    Python, React, Django, Django Rest Framework"
-          />
+            <WorkExperience
+              companyName="Umuzi"
+              role="Software Developer & SME"
+              imageName="/umuzi_logo.png"
+              imageWidth={70}
+              imageHeight={70}
+              durationDur="Jul 2024 - Aug 2025"
+              durationDesc="12 months"
+              workHighlights={`I collaborated on developing and maintaining a kanban-board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor and mentor teaching programming concepts through practical and problem-solving sessions.`}
+              skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, SQL, Python, Django, Django Rest Framework"
+            />
+          </div>
         </div>
       </main>
       <footer className=""></footer>
