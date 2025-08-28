@@ -1,5 +1,6 @@
 import Image from "next/image";
-import WorkExperience from "./components/work_experience";
+import WorkExperience from "./components/WorkExperience";
+import Education from "./components/Education";
 
 export default function Home() {
   return (
@@ -27,8 +28,9 @@ export default function Home() {
               systems that enable to the web and other systems.
             </p>
             <p>
-              When I am not trying to be technical wizard, I sleep, walk the
-              trails, or get deep into fiction/self-help books.
+              When not in my technical wizardry mode, you will find that I am
+              sleeping, walking the trails, or deep into fiction/self-help
+              books.
             </p>
           </div>
         </div>
@@ -37,25 +39,54 @@ export default function Home() {
           <h2 className="font-bold text-xl lg:text-2xl">Work Experience</h2>
           <div className="grid space-y-2 mx-4">
             <WorkExperience
-              companyName="Umbono Cloud"
+              companyName="umbono Cloud"
               role="Software Developer"
               imageName="/umbono_logo.webp"
               imageWidth={190}
               imageHeight={70}
-              durationDur="Aug 2025 - Present"
+              durationDur="Aug 2024 - Present"
               workHighlights={`I develop and maintain full-stack web applications and CRM integrations, and integrating platforms like Call Cabinet, Microsoft D365, Matrix42, and Zoho.`}
               skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, Next.js, SQL, Python"
             />
 
             <WorkExperience
-              companyName="Umuzi"
+              companyName="umuzi.org"
               role="Software Developer"
               imageName="/umuzi_logo.png"
               imageWidth={70}
               imageHeight={70}
-              durationDur="Jul 2024 - Aug 2025"
-              workHighlights={`I collaborated on developing and maintaining a kanban-board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor, code-reviwer and mentor for learnership students.`}
+              durationDur="Aug 2023 - July 2024"
+              workHighlights={`I collaborated on developing and maintaining a kanban-board frontend and internal systems, supported the data team with ETL workflows as a data engineer, and served as an instructor, code-reviwer and mentor for learnership students.`}
               skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, SQL, Python, Django, Django Rest Framework"
+            />
+          </div>
+        </div>
+
+        <div className="grid space-y-2">
+          <h2 className="font-bold text-xl lg:text-2xl">Education</h2>
+          <div className="grid space-y-2 mx-4">
+            <Education
+              schoolName="mictseta"
+              qualificationName="Systems Development, NQF5"
+              imageName="/mictseta_logo.webp"
+              imageWidth={70}
+              imageHeight={70}
+              durationDur="Sept 2021 - July 2023"
+              courseHighlights={`2-year learn-as-you-earn learnership programme cooperate-sponsored by equal-experts, facilitated by tech-ed organization umuzi.org`}
+              skillsList={[
+                "How to learn",
+                "How the internet works",
+                "Operating Systems",
+                "Client-side and Server-side Scripting",
+                "System Design and Database Design",
+                "Data Structures and Algorithms",
+                "Software Testing and Best Practices",
+                "Software Engineering, SDLC",
+                "Agile Manifesto and Agile Processes",
+                "Peer Code Reviews",
+                "Mobile Development",
+                "Data Engineering",
+              ]}
             />
           </div>
         </div>
