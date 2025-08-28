@@ -27,26 +27,22 @@ export default function WorkExperience({
     <div className="grid bg-gray-300/50 rounded-md">
       <div className="space-y-2 p-4">
         <span className="grid lg:flex lg:justify-between font-bold">
-          <div className="grid lg:flex lg:space-x-4 lg:items-start">
-            <div className="h-18 w-52 bg-black rounded-md p-1 justify-items-center">
+          <div className="w-full grid lg:flex lg:justify-between space-y-2 lg:space-x-4 lg:align-baseline">
+            <div className="h-18 w-full lg:w-52  bg-black rounded-md justify-items-center">
               <Image
                 src={imageName}
                 height={imageHeight}
                 width={imageWidth}
                 alt="umbono_logo"
-                className="bg-black rounded-md p-1"
+                className=" bg-black rounded-md p-1"
               />
             </div>
-            <div>
-              <p className="text-lg lg:text-xl">{companyName}</p>
-              <h2 className="text-md lg:text-lg">{role}</h2>
+
+            <div className="font-bold text-xs lg:text-lg p-0">
+              <p className="p-0 m-0">{role}</p>
+              <p>{companyName}</p>
+              <p>{durationDur}</p>
             </div>
-          </div>
-          <div>
-            <p className="text-lg lg:text-xl">{durationDur}</p>
-            <h2 className="flex text-md lg:text-lg lg:justify-self-end">
-              {durationDesc}
-            </h2>
           </div>
         </span>
 
@@ -59,11 +55,11 @@ export default function WorkExperience({
 
         <div className="flex">
           <p className="bg-blue-400 w-1.5 rounded-l-md"></p>
-          <div className="grid w-full bg-gray-300/80 p-2 rounded-r-md space-x-1 text-sm lg:text-lg lg:text-md font-bold">
+          <div className="grid w-full bg-gray-300/80 p-2 rounded-r-md space-x-1 text-xs lg:text-lg font-bold">
             <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
-              Skills
+              Tech stack tools
             </h3>
-            <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900">
+            <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900 text-xs lg:text-lg font-bold">
               {skillsList}
             </p>
           </div>

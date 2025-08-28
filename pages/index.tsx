@@ -19,17 +19,16 @@ export default function Home() {
           <h2 className="font-bold text-xl lg:text-2xl">Biography</h2>
           <div className="space-y-2 mx-4">
             <p>
-              I am software developer based in Pretoria, South Africa. I love
-              coming up with solutions that help solve problems.
+              I am junior software developer based in Pretoria, South Africa.
+            </p>
+
+            <p>
+              I specialize in backend because I love tinkering with complex
+              systems that enable to the web and other systems.
             </p>
             <p>
-              When a solution approach is baked and ready, I write code to
-              implement and create the product.
-            </p>
-            <p>
-              When I am not trying to be technical wizard, I am probably
-              sleeping, walking the trails, or deep into a fictional/self-help
-              book.
+              When I am not trying to be technical wizard, I sleep, walk the
+              trails, or get deep into fiction/self-help books.
             </p>
           </div>
         </div>
@@ -51,13 +50,13 @@ export default function Home() {
 
             <WorkExperience
               companyName="Umuzi"
-              role="Software Developer & SME"
+              role="Software Developer"
               imageName="/umuzi_logo.png"
               imageWidth={70}
               imageHeight={70}
               durationDur="Jul 2024 - Aug 2025"
               durationDesc="12 months"
-              workHighlights={`I collaborated on developing and maintaining a kanban-board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor and mentor teaching programming concepts through practical and problem-solving sessions.`}
+              workHighlights={`I collaborated on developing and maintaining a kanban-board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor, code-reviwer and mentor for learnership students.`}
               skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, SQL, Python, Django, Django Rest Framework"
             />
           </div>
