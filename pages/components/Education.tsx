@@ -57,7 +57,7 @@ export default function Education({
               Core Concepts Learnt
             </h3>
             <ul className="grid grid-cols-1 lg:grid-cols-2 whitespace-normal break-words p-1 justify-left text-gray-900 text-xs xl:text-lg font-bold">
-              {skillsList.map((skill, index) => (
+              {skillsList?.map((skill, index) => (
                 <li key={index}>- {skill}</li>
               ))}
             </ul>
