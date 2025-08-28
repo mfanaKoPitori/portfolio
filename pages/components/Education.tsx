@@ -29,7 +29,7 @@ export default function Education({
             src={imageName}
             height={imageHeight}
             width={imageWidth}
-            alt="umbono_logo"
+            alt={`${schoolName}_logo`}
             className=" bg-black rounded-md p-1"
           />
         </section>
