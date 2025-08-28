@@ -19,7 +19,7 @@ export default function Home() {
           <h2 className="font-bold text-xl lg:text-2xl">Biography</h2>
           <div className="space-y-2 mx-4">
             <p>
-              I am junior software developer based in Pretoria, South Africa.
+              I am a junior software developer based in Pretoria, South Africa.
             </p>
 
             <p>
@@ -43,7 +43,6 @@ export default function Home() {
               imageWidth={190}
               imageHeight={70}
               durationDur="Aug 2025 - Present"
-              durationDesc="1 year 2 months"
               workHighlights={`I develop and maintain full-stack web applications and CRM integrations, and integrating platforms like Call Cabinet, Microsoft D365, Matrix42, and Zoho.`}
               skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, Next.js, SQL, Python"
             />
@@ -55,7 +54,6 @@ export default function Home() {
               imageWidth={70}
               imageHeight={70}
               durationDur="Jul 2024 - Aug 2025"
-              durationDesc="12 months"
               workHighlights={`I collaborated on developing and maintaining a kanban-board frontend, supported the data team with ETL workflows as a data engineer, and served as an instructor, code-reviwer and mentor for learnership students.`}
               skillsList="HTML, CSS, Tailwind CSS, Javascript, Typescript, React, SQL, Python, Django, Django Rest Framework"
             />

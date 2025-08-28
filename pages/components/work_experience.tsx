@@ -7,7 +7,6 @@ type WorkExperienceProps = {
   imageWidth: number;
   imageHeight: number;
   durationDur: string;
-  durationDesc: string;
   workHighlights: string;
   skillsList: string;
 };
@@ -19,7 +18,6 @@ export default function WorkExperience({
   imageWidth,
   imageHeight,
   durationDur,
-  durationDesc,
   workHighlights,
   skillsList,
 }: WorkExperienceProps) {
