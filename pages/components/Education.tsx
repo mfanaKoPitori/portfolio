@@ -44,11 +44,11 @@ export default function Education({
         </section>
       </section>
 
-      <section className="flex flex-cols-2 bg-gray-300/60 rounded-md border-l-5 border-green-500">
+      <section className="flex flex-cols-2 bg-gray-300/60 rounded-md border-l-5 border-blue-400">
         <p className="w-11/12 p-2 text-left">{courseHighlights}</p>
       </section>
 
-      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs border-l-5 border-green-400">
+      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs border-l-5 border-blue-400">
         <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
           Core concepts
         </h3>

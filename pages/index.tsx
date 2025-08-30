@@ -6,7 +6,7 @@ import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <section className="grid space-y-2 py-4 2xl:bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 2xl:mt-2 2xl:mb-2 justify-self-center">
+    <section className="grid space-y-2 py-4 bg-gray-400/40 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md">
       <header className="grid justify-center justify-items-center space-y-4">
         <Image
           src="/headshot.jpg"
@@ -15,7 +15,28 @@ export default function Home() {
           alt="picture of raymond Mawina"
           className="rounded-full"
         />
+
         <h1 className="font-bold">Raymond Mawina</h1>
+
+        <ul className="flex space-x-2 flex-wrap">
+          <li>
+            <a href="#work" className="text-purple-800">
+              Work
+            </a>
+          </li>
+
+          <li>
+            <a href="#education" className="text-purple-800">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects" className="text-purple-800">
+              Projects
+            </a>
+          </li>
+        </ul>
       </header>
       <main className="grid space-y-4 p-4">
         <section className="grid space-y-2">
@@ -38,7 +59,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Work Experience</h2>
+          <h2 id="work" className="font-bold">
+            Work Experience
+          </h2>
           <section className="grid space-y-2 mx-4">
             <WorkExperience
               companyName="umbono cloud"
@@ -65,7 +88,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Education</h2>
+          <h2 id="education" className="font-bold">
+            Education
+          </h2>
           <section className="grid space-y-2 mx-4">
             <Education
               schoolName="mictseta"
@@ -84,7 +109,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Recent Projects</h2>
+          <h2 id="projects" className="font-bold">
+            Recent Projects
+          </h2>
           <section className="grid space-y-2 mx-4">
             <Project
               projectName="Personal daily task planner"
@@ -107,7 +134,7 @@ export default function Home() {
               imageName="/problem_solve_daily_logo.webp"
               imageWidth={160}
               imageHeight={100}
-              projectDesc={`A mobile app that gives you a set of 2 problems a day, and helps to monitor your progress.`}
+              projectDesc={`A mobile app that gives you a set of 2 problems a day to solve, and helps you to monitor your progress.`}
               stackList={[
                 "React",
                 "React Native",
@@ -123,7 +150,7 @@ export default function Home() {
               imageName="/driving_for_brainiacs_logo.webp"
               imageWidth={160}
               imageHeight={100}
-              projectDesc={`A mobile app that gives helps you to prepare for your learners driving test.`}
+              projectDesc={`A mobile app that helps you to prepare for your learners driving test.`}
               stackList={[
                 "React",
                 "React Native",
@@ -136,7 +163,6 @@ export default function Home() {
           </section>
         </section>
       </main>
-      <footer className=""></footer>
     </section>
   );
 }
