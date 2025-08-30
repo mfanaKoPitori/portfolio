@@ -3,6 +3,7 @@ import Image from "next/image";
 type EducationProps = {
   schoolName: string;
   qualificationName: string;
+  qualificationLevel: string;
   imageName: string;
   imageWidth: number;
   imageHeight: number;
@@ -14,6 +15,7 @@ type EducationProps = {
 export default function Education({
   schoolName,
   qualificationName,
+  qualificationLevel,
   imageName,
   imageWidth,
   imageHeight,
@@ -34,8 +36,9 @@ export default function Education({
           />
         </section>
 
-        <section className="font-bold text-xs lg:text-lg p-0">
+        <section className="font-bold text-xs lg:text-lg p-0 lg:w-50">
           <p className="p-0 m-0">{qualificationName}</p>
+          <p className="p-0 m-0">{qualificationLevel}</p>
           <p>{schoolName}</p>
           <p>{durationDur}</p>
         </section>

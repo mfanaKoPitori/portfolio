@@ -34,7 +34,7 @@ export default function WorkExperience({
           />
         </section>
 
-        <section className="font-bold text-xs lg:text-lg p-0">
+        <section className="font-bold text-xs lg:text-lg p-0 lg:w-50">
           <p className="p-0 m-0">{role}</p>
           <p>{companyName}</p>
           <p>{durationDur}</p>
