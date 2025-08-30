@@ -6,7 +6,7 @@ import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <section className="grid space-y-2 py-4 2xl:bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 2xl:mt-2 2xl:mb-2 justify-self-center">
+    <section className="grid space-y-2 py-4 bg-gray-400/40 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md">
       <header className="grid justify-center justify-items-center space-y-4">
         <Image
           src="/headshot.jpg"
@@ -107,7 +107,7 @@ export default function Home() {
               imageName="/problem_solve_daily_logo.webp"
               imageWidth={160}
               imageHeight={100}
-              projectDesc={`A mobile app that gives you a set of 2 problems a day, and helps to monitor your progress.`}
+              projectDesc={`A mobile app that gives you a set of 2 problems a day to solve, and helps you to monitor your progress.`}
               stackList={[
                 "React",
                 "React Native",
@@ -123,7 +123,7 @@ export default function Home() {
               imageName="/driving_for_brainiacs_logo.webp"
               imageWidth={160}
               imageHeight={100}
-              projectDesc={`A mobile app that gives helps you to prepare for your learners driving test.`}
+              projectDesc={`A mobile app that helps you to prepare for your learners driving test.`}
               stackList={[
                 "React",
                 "React Native",
