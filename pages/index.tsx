@@ -15,7 +15,28 @@ export default function Home() {
           alt="picture of raymond Mawina"
           className="rounded-full"
         />
+
         <h1 className="font-bold">Raymond Mawina</h1>
+
+        <ul className="flex space-x-2 flex-wrap">
+          <li>
+            <a href="#work" className="text-purple-800">
+              Work
+            </a>
+          </li>
+
+          <li>
+            <a href="#education" className="text-purple-800">
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a href="#projects" className="text-purple-800">
+              Projects
+            </a>
+          </li>
+        </ul>
       </header>
       <main className="grid space-y-4 p-4">
         <section className="grid space-y-2">
@@ -38,7 +59,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Work Experience</h2>
+          <h2 id="work" className="font-bold">
+            Work Experience
+          </h2>
           <section className="grid space-y-2 mx-4">
             <WorkExperience
               companyName="umbono cloud"
@@ -65,7 +88,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Education</h2>
+          <h2 id="education" className="font-bold">
+            Education
+          </h2>
           <section className="grid space-y-2 mx-4">
             <Education
               schoolName="mictseta"
@@ -84,7 +109,9 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold">Recent Projects</h2>
+          <h2 id="projects" className="font-bold">
+            Recent Projects
+          </h2>
           <section className="grid space-y-2 mx-4">
             <Project
               projectName="Personal daily task planner"
