@@ -9,7 +9,7 @@ type EducationProps = {
   imageHeight: number;
   durationDur: string;
   courseHighlights: string;
-  skillsList: string[];
+  skillsList: string;
 };
 
 export default function Education({
@@ -36,7 +36,7 @@ export default function Education({
           />
         </section>
 
-        <section className="font-bold text-xs lg:text-lg p-0 lg:w-50">
+        <section className="font-bold text-xs p-0 lg:w-50">
           <p className="p-0 m-0">{qualificationName}</p>
           <p className="p-0 m-0">{qualificationLevel}</p>
           <p>{schoolName}</p>
@@ -48,15 +48,13 @@ export default function Education({
         <p className="w-11/12 p-2 text-left">{courseHighlights}</p>
       </section>
 
-      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs lg:text-lg font-bold border-l-5 border-green-500">
+      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs border-l-5 border-green-400">
         <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
-          Core Concepts Learnt
+          Core concepts
         </h3>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 whitespace-normal break-words p-1 justify-left text-gray-900 text-xs xl:text-lg font-bold">
-          {skillsList?.map((skill, index) => (
-            <li key={index}>- {skill}</li>
-          ))}
-        </ul>
+        <p className="grid whitespace-normal break-words p-1 justify-center text-xs">
+          {skillsList}
+        </p>
       </section>
     </section>
   );

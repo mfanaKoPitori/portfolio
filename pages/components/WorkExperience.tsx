@@ -34,7 +34,7 @@ export default function WorkExperience({
           />
         </section>
 
-        <section className="font-bold text-xs lg:text-lg p-0 lg:w-50">
+        <section className="font-bold text-xs p-0 lg:w-50">
           <p className="p-0 m-0">{role}</p>
           <p>{companyName}</p>
           <p>{durationDur}</p>
@@ -45,11 +45,11 @@ export default function WorkExperience({
         <p className="w-11/12 p-2 text-left">{workHighlights}</p>
       </section>
 
-      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs lg:text-lg font-bold border-l-5 border-blue-400">
+      <section className="grid w-full bg-gray-300/80 p-2 rounded-md space-x-1 text-xs border-l-5 border-blue-400">
         <h3 className="grid justify-center bg-gray-400/30 p-1 rounded-md">
           Tech Stack Tools
         </h3>
-        <p className="grid whitespace-normal break-words p-1 justify-center text-gray-900 text-xs lg:text-lg font-bold">
+        <p className="grid whitespace-normal break-words p-1 justify-center text-xs">
           {skillsList}
         </p>
       </section>

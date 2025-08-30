@@ -6,7 +6,7 @@ import Project from "./components/Project";
 
 export default function Home() {
   return (
-    <section className="grid space-y-2 py-4 2xl:bg-gray-100 lg:space-y-8 text-sm lg:text-lg w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 2xl:mt-2 2xl:mb-2 justify-self-center">
+    <section className="grid space-y-2 py-4 2xl:bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 2xl:mt-2 2xl:mb-2 justify-self-center">
       <header className="grid justify-center justify-items-center space-y-4">
         <Image
           src="/headshot.jpg"
@@ -15,11 +15,11 @@ export default function Home() {
           alt="picture of raymond Mawina"
           className="rounded-full"
         />
-        <h1 className="text-2xl lg:text-4xl font-bold">Raymond Mawina</h1>
+        <h1 className="font-bold">Raymond Mawina</h1>
       </header>
       <main className="grid space-y-4 p-4">
         <section className="grid space-y-2">
-          <h2 className="font-bold text-xl lg:text-2xl">Biography</h2>
+          <h2 className="font-bold">Biography</h2>
           <section className="space-y-2 mx-4">
             <p>
               I am a junior software developer based in Pretoria, South Africa.
@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold text-xl lg:text-2xl">Work Experience</h2>
+          <h2 className="font-bold">Work Experience</h2>
           <section className="grid space-y-2 mx-4">
             <WorkExperience
               companyName="umbono cloud"
@@ -65,7 +65,7 @@ export default function Home() {
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold text-xl lg:text-2xl">Education</h2>
+          <h2 className="font-bold">Education</h2>
           <section className="grid space-y-2 mx-4">
             <Education
               schoolName="mictseta"
@@ -76,27 +76,32 @@ export default function Home() {
               imageHeight={70}
               durationDur="Sept 2021 - July 2023"
               courseHighlights={`Two year learnership programme cooperate-sponsored by equal-experts, and facilitated by tech-ed organization Umuzi.org.`}
-              skillsList={[
-                "How to learn",
-                "How the internet works",
-                "Operating systems",
-                "Client side and server side scripting",
-                "System design and database design",
-                "Data structures and algorithms",
-                "Software testing and best practices",
-                "Software engineering, SDLC",
-                "Agile manifesto and agile processes",
-                "Peer code reviews",
-                "Mobile development",
-                "Data engineering",
-              ]}
+              skillsList={
+                "How to learn, How the internet works, Operating systems, Client side and server side scripting, System design and database design, Data structures and algorithms, Software testing and best practices, Software engineering, SDLC, Agile manifesto and agile processes, Peer code reviews, Mobile development, Data engineering"
+              }
             />
           </section>
         </section>
 
         <section className="grid space-y-2">
-          <h2 className="font-bold text-xl lg:text-2xl">Recent Projects</h2>
+          <h2 className="font-bold">Recent Projects</h2>
           <section className="grid space-y-2 mx-4">
+            <Project
+              projectName="Personal daily task planner"
+              imageName="/personal_daily_task_planner_logo.webp"
+              imageWidth={160}
+              imageHeight={100}
+              projectDesc={`A website that helps you keep track of your daily tasks.`}
+              stackList={[
+                "HTML",
+                "CSS",
+                "React",
+                "Next.js",
+                "Java",
+                "Springboot",
+              ]}
+            />
+
             <Project
               projectName="Problem solve daily"
               imageName="/problem_solve_daily_logo.webp"
@@ -112,6 +117,7 @@ export default function Home() {
                 "Express.js",
               ]}
             />
+
             <Project
               projectName="Driving for brainaics"
               imageName="/driving_for_brainiacs_logo.webp"
@@ -125,22 +131,6 @@ export default function Home() {
                 "SQLite",
                 "Python",
                 "Django Rest Framework",
-              ]}
-            />
-
-            <Project
-              projectName="Personal daily task planner"
-              imageName="/personal_daily_task_planner_logo.webp"
-              imageWidth={160}
-              imageHeight={100}
-              projectDesc={`A website that helps you keep track of your daily tasks.`}
-              stackList={[
-                "HTML",
-                "CSS",
-                "React",
-                "Next.js",
-                "Java",
-                "Spingboot",
               ]}
             />
           </section>

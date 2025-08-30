@@ -21,13 +21,13 @@ export default function Project({
     <section className="grid bg-gray-300/50 space-y-2 py-2 px-4 rounded-md">
       <p className=" m-0 font-bold text-lg text-center p-2">{projectName}</p>
       <section className="w-full grid lg:flex lg:justify-between space-y-2 lg:space-x-4 lg:align-baseline">
-        <section className="lg:w-3/6 bg-black rounded-md justify-items-center">
+        <section className="lg:w-3/6 bg-black rounded-md justify-items-center align-middle">
           <Image
             src={imageName}
             height={imageHeight}
             width={imageWidth}
             alt={`${projectName}_logo`}
-            className=" bg-black rounded-md p-2"
+            className=" bg-black rounded-md p-2 justify-self-center"
           />
         </section>
 
@@ -41,28 +41,21 @@ export default function Project({
               ))}
             </ul>
           </section>
-        </section>
-      </section>
 
-      <section className="flex space-x-4 w-full text-xs text-left justify-center">
-        <section className="grid space-x-2 bg-gray-300 p-4 rounded-md">
-          <h5 className="font-bold">Repository link</h5>
-          <a
-            href="http://google.com"
-            className="text-purple-700 underline pl-4"
-          >
-            {projectName}
-          </a>
-        </section>
+          <section className="flex space-x-4 w-full text-xs text-left justify-center p-2">
+            <section className="grid space-x-2 p-4 rounded-md">
+              <a href="http://google.com" className="text-purple-700 underline">
+                Repo link
+              </a>
+            </section>
 
-        <section className="grid space-x-2 bg-gray-300 p-4 rounded-md">
-          <h5 className="font-bold">Live demo link</h5>
-          <a
-            href="http://google.com"
-            className="text-purple-700 underline pl-4"
-          >
-            {projectName}
-          </a>
+            <section className="grid space-x-2 p-4 rounded-md">
+              <h5 className="font-bold"></h5>
+              <a href="http://google.com" className="text-purple-700 underline">
+                Demo link
+              </a>
+            </section>
+          </section>
         </section>
       </section>
     </section>
