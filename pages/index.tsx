@@ -136,7 +136,6 @@ export default function Home() {
           </section>
         </section>
       </main>
-      <footer className=""></footer>
     </section>
   );
 }
