@@ -34,8 +34,8 @@ export default function Project({
         <section className="text-xs p-0 lg:w-3/6">
           <p className="p-2 text-left">{projectDesc}</p>
           <section className="p-2 text-xs text-left flex space-x-2">
-            <h5 className="w-1/5">Tech stack:</h5>
-            <ul className="flex space-x-2 flex-wrap w-4/5">
+            <h5 className="w-1/3">Tech stack:</h5>
+            <ul className="flex space-x-2 flex-wrap w-2/3">
               {stackList?.map((skill, index) => (
                 <li key={index}> {skill}</li>
               ))}
