@@ -1,6 +1,25 @@
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [buttons, setButtons] = useState([
+    "Skills",
+    "Projects",
+    "Work",
+    "School",
+    "Writing",
+  ]);
+
+  const [activeButton, setActiveButton] = useState<string | null>("Skills");
+  const handleButtonClick = (button: string) => {
+    setActiveButton(button === activeButton ? null : button);
+  };
+
+  const [showSkillCategory, setShowSkillCategory] = useState<Boolean>(false);
+  const handleSkillCategoryToggle = () => {
+    setShowSkillCategory(() => !showSkillCategory);
+  };
+
   return (
     <section className="grid space-y-2 py-4 bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md">
       <header className="grid justify-center justify-items-center space-y-4">
@@ -12,7 +31,7 @@ export default function Home() {
           className="rounded-full"
         />
 
-        <section className="grid justify-self-center text-left space-y-2 w-2/3 p-2 border-2 border-green-400/40 rounded-md">
+        <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
             Raymond Mawina / GlaringWizard
           </h1>
@@ -27,6 +46,143 @@ export default function Home() {
             When not in my technical wizardry mode, you will find that I am
             sleeping, walking the trails, or deep into a book.
           </p>
+        </section>
+
+        <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-yellow-500/60 rounded-md">
+          <nav>
+            <ul className="flex justify-between space-x-1 lg:space-x-2 w-full">
+              {buttons.map((item) => (
+                <li key={item}>
+                  <button
+                    className={`w-fit lg:w-16 text-xs p-1 lg:p-2 border-b-2 border-blue-400/60 ${
+                      activeButton === item ? "border-red-400/70" : ""
+                    }`}
+                    onClick={() => {
+                      if (activeButton !== item) {
+                        handleButtonClick(item);
+                      }
+                    }}
+                  >
+                    {item}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <section className="py-2">
+            {activeButton === "Skills" && (
+              //make this scrollable if too long
+              <section className="grid space-y-2">
+                <ul className="grid space-y-1">
+                  <li>
+                    <section>
+                      <h3 className="font-bold">Fundamentals</h3>
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">Tools</h3>
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">Cloud Stack</h3>
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">
+                        Programming Languages{" "}
+                        <button onClick={handleSkillCategoryToggle}>
+                          {showSkillCategory ? `[hide]` : `[show]`}
+                        </button>
+                      </h3>
+
+                      {showSkillCategory && (
+                        <ul className="space-y-2 max-h-40 overflow-y-auto">
+                          <li>
+                            <section className="px-2">
+                              <h4 className="font-bold">
+                                JavaScript / TypeScript
+                              </h4>
+                              <section className="px-2">
+                                <h5 className="font-bold">
+                                  Frameworks & Libraries
+                                </h5>
+                                <ul className="px-2">
+                                  <li>Node.js</li>
+                                  <li>Express.js</li>
+                                  <li>React</li>
+                                  <li>Redux</li>
+                                  <li>Next.js</li>
+                                </ul>
+                              </section>
+                            </section>
+                          </li>
+
+                          <li>
+                            <section className="px-2">
+                              <h4 className="font-bold">
+                                JavaScript / TypeScript
+                              </h4>
+                              <section className="px-2">
+                                <h5 className="font-bold">
+                                  Frameworks & Libraries
+                                </h5>
+                                <ul className="px-2">
+                                  <li>Node.js</li>
+                                  <li>Express.js</li>
+                                  <li>React</li>
+                                  <li>Redux</li>
+                                  <li>Next.js</li>
+                                </ul>
+                              </section>
+                            </section>
+                          </li>
+
+                          <li>
+                            <section className="px-2">
+                              <h4 className="font-bold">
+                                JavaScript / TypeScript
+                              </h4>
+                              <section className="px-2">
+                                <h5 className="font-bold">
+                                  Frameworks & Libraries
+                                </h5>
+                                <ul className="px-2">
+                                  <li>Node.js</li>
+                                  <li>Express.js</li>
+                                  <li>React</li>
+                                  <li>Redux</li>
+                                  <li>Next.js</li>
+                                </ul>
+                              </section>
+                            </section>
+                          </li>
+                        </ul>
+                      )}
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">DevOps</h3>
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">Soft Skills</h3>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+            )}
+          </section>
         </section>
       </header>
     </section>
