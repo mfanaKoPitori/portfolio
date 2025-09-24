@@ -21,8 +21,8 @@ export default function Home() {
   };
 
   return (
-    <section className="flex flex-col space-y-2 py-4 bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md min-h-dvh">
-      <header className="justify-center justify-items-center space-y-4">
+    <section className="flex flex-col space-y-2 py-2 my-1 bg-gray-100 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
+      <header className="justify-center justify-items-center space-y-2">
         <Image
           src="/headshot.jpg"
           width={120}
@@ -33,7 +33,7 @@ export default function Home() {
 
         <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
-            Raymond Mawina / GlaringWizard
+            Raymond Mawina / LeGlaringWizard
           </h1>
           <p>I am a Software Developer based in Pretoria, South Africa.</p>
 
@@ -186,6 +186,11 @@ export default function Home() {
           </section>
         </section>
       </main>
+      <footer>
+        <section className="flex flex-col justify-self-center text-center space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
+          <p>🪄 Forged in code by LeGlaringWizard · 2025</p>
+        </section>
+      </footer>
     </section>
   );
 }
