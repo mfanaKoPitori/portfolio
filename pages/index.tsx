@@ -33,7 +33,7 @@ export default function Home() {
 
         <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
-            Raymond Mawina / GlaringWizard
+            Raymond Mawina / LeGlaringWizard
           </h1>
           <p>I am a Software Developer based in Pretoria, South Africa.</p>
 
