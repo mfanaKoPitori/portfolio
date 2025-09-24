@@ -21,8 +21,8 @@ export default function Home() {
   };
 
   return (
-    <section className="grid space-y-2 py-4 bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md">
-      <header className="grid justify-center justify-items-center space-y-4">
+    <section className="flex flex-col space-y-2 py-4 bg-gray-100 lg:space-y-8 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 mt-2 mb-2 justify-self-center rounded-md min-h-dvh">
+      <header className="justify-center justify-items-center space-y-4">
         <Image
           src="/headshot.jpg"
           width={120}
@@ -47,14 +47,15 @@ export default function Home() {
             sleeping, walking the trails, or deep into a book.
           </p>
         </section>
-
-        <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-yellow-500/60 rounded-md">
+      </header>
+      <main>
+        <section className="flex flex-col justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 py-1 px-2 border-2 border-yellow-500/60 rounded-md min-h-70 max-h-70 lg:min-h-100 lag:max-h-dvh ">
           <nav>
-            <ul className="flex justify-between space-x-1 lg:space-x-2 w-full">
+            <ul className="flex flex-wrap justify-between space-x-2 lg:space-x-2 w-full">
               {buttons.map((item) => (
                 <li key={item}>
                   <button
-                    className={`w-fit lg:w-16 text-xs p-1 lg:p-2 border-b-2 border-blue-400/60 ${
+                    className={`w-fit lg:w-16 text-xs py-1 px-2 border-b-2 border-blue-400/60 ${
                       activeButton === item ? "border-red-400/70" : ""
                     }`}
                     onClick={() => {
@@ -70,7 +71,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          <section className="py-2">
+          <section className="py-1 px-2">
             {activeButton === "Skills" && (
               //make this scrollable if too long
               <section className="grid space-y-2">
@@ -103,7 +104,7 @@ export default function Home() {
                       </h3>
 
                       {showSkillCategory && (
-                        <ul className="space-y-2 max-h-40 overflow-y-auto">
+                        <ul className="space-y-1 max-h-25 lg:max-h-40 min-h-25 lg:min-h-40 overflow-y-auto">
                           <li>
                             <section className="px-2">
                               <h4 className="font-bold">
@@ -184,7 +185,7 @@ export default function Home() {
             )}
           </section>
         </section>
-      </header>
+      </main>
     </section>
   );
 }
