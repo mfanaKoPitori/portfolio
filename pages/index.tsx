@@ -20,7 +20,9 @@ export default function Home() {
     setShowSkillCategory(() => !showSkillCategory);
   };
 
-  const prevent = (e) => e.preventDefault();
+  const prevent = (e: React.SyntheticEvent) => {
+    e.preventDefault();
+  };
 
   return (
     <section className="flex flex-col space-y-2 py-2 my-1 bg-gray-100 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
