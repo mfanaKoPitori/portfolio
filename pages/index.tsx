@@ -20,16 +20,26 @@ export default function Home() {
     setShowSkillCategory(() => !showSkillCategory);
   };
 
+  const prevent = (e) => e.preventDefault();
+
   return (
     <section className="flex flex-col space-y-2 py-2 my-1 bg-gray-100 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
       <header className="justify-center justify-items-center space-y-2">
-        <Image
-          src="/headshot.jpg"
-          width={120}
-          height={120}
-          alt="picture of raymond Mawina"
-          className="rounded-full"
-        />
+        <div
+          className="select-none"
+          onContextMenu={prevent}
+          onDragStart={prevent}
+          onMouseDown={prevent}
+        >
+          <Image
+            src="/headshot.jpg"
+            width={120}
+            height={120}
+            alt="picture of raymond Mawina"
+            draggable={false}
+            className="rounded-full pointer-events-none"
+          />
+        </div>
 
         <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
