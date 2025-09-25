@@ -107,12 +107,13 @@ export default function Home() {
                     <section>
                       <h3 className="font-bold">Languages</h3>
                       <ul className="space-y-1 max-h-22 lg:max-h-35 min-h-22 lg:min-h-35 overflow-y-auto mt-1 px-2">
+                        <li>HTML, CSS, Tailwind</li>
                         <li>Javascript & Typescript</li>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>C#</li>
-                        <li>Postgres & MySQL</li>
+                        <li>Node.js, React, Redux & Next.js</li>
+                        <li>Python, Flask, Django</li>
+                        <li>Java, Spring, SpringBoot</li>
+                        <li>C#, .NET & .NET Core</li>
+                        <li>Postgres, MySQL, MSSQL</li>
                       </ul>
                     </section>
                   </li>
