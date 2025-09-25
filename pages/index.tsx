@@ -88,9 +88,9 @@ export default function Home() {
               //make this scrollable if too long
               <section className="grid space-y-2">
                 <ul className="grid grid-cols-2 gap-2 space-y-1">
-                  <li className="w-4/5">
+                  <li>
                     <section>
-                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40 w-4/5">
                         Fundamentals
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -105,9 +105,9 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li className="w-4/5">
+                  <li>
                     <section>
-                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40 w-4/5">
                         Languages
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -122,9 +122,9 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li className="w-4/5">
+                  <li>
                     <section>
-                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40 w-4/5">
                         Tools
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -138,9 +138,9 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li className="w-4/5">
+                  <li>
                     <section>
-                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40 w-4/5">
                         Cloud Stack
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
