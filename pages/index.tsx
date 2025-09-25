@@ -61,7 +61,7 @@ export default function Home() {
         </section>
       </header>
       <main>
-        <section className="flex flex-col justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 py-1 px-2 border-2 border-yellow-500/60 rounded-md min-h-70 max-h-70 lg:min-h-100 lag:max-h-dvh ">
+        <section className="flex flex-col justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 py-1 px-2 border-2 border-yellow-500/60 rounded-md min-h-80 lg:min-h-100 lag:max-h-dvh">
           <nav>
             <ul className="flex flex-wrap justify-between space-x-2 lg:space-x-2 w-full">
               {buttons.map((item) => (
@@ -91,7 +91,7 @@ export default function Home() {
                   <li>
                     <section>
                       <h3 className="font-bold">Fundamentals</h3>
-                      <ul className="space-y-1 max-h-22 lg:max-h-35 min-h-22 lg:min-h-35 overflow-y-auto mt-1 px-2">
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>Operating Systems</li>
                         <li>Functional & OO Programming</li>
                         <li>System Design & Analysis</li>
@@ -106,7 +106,7 @@ export default function Home() {
                   <li>
                     <section>
                       <h3 className="font-bold">Languages</h3>
-                      <ul className="space-y-1 max-h-22 lg:max-h-35 min-h-22 lg:min-h-35 overflow-y-auto mt-1 px-2">
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>HTML, CSS & Tailwind</li>
                         <li>Javascript & Typescript</li>
                         <li>Node.js, React, Redux & Next.js</li>
@@ -121,7 +121,7 @@ export default function Home() {
                   <li>
                     <section>
                       <h3 className="font-bold">Tools</h3>
-                      <ul className="space-y-1 max-h-22 lg:max-h-35 min-h-22 lg:min-h-35 overflow-y-auto mt-1 px-2">
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>Linux & Windows</li>
                         <li>VsCode</li>
                         <li>Shell and Vim</li>
@@ -135,7 +135,7 @@ export default function Home() {
                   <li>
                     <section>
                       <h3 className="font-bold">Cloud Stack</h3>
-                      <ul className="space-y-1 max-h-22 lg:max-h-35 min-h-22 lg:min-h-35 overflow-y-auto mt-1 px-2">
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>AWS</li>
                         <li>Microsoft Azure</li>
                         <li>GCP</li>
