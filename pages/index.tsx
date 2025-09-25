@@ -43,7 +43,7 @@ export default function Home() {
           />
         </div>
 
-        <section className="grid justify-self-center text-left space-y-2 w-9/11 lg:w-2/3 p-1 border-2 border-green-400/40 rounded-md">
+        <section className="grid justify-self-center text-left space-y-2 w-9/11 lg:w-2/3 p-1 px-2 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
             Raymond Mawina / LeGlaringWizard
           </h1>
@@ -149,7 +149,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <section className="flex flex-col justify-self-center text-center space-y-2 w-9/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
+        <section className="flex flex-col justify-self-center text-center space-y-2 w-9/11 lg:w-2/3 p-2 px-2 border-2 border-green-400/40 rounded-md">
           <p>🪄 Forged in code by LeGlaringWizard · 2025</p>
         </section>
       </footer>
