@@ -88,9 +88,11 @@ export default function Home() {
               //make this scrollable if too long
               <section className="grid space-y-2">
                 <ul className="grid grid-cols-2 gap-2 space-y-1">
-                  <li>
+                  <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold">Fundamentals</h3>
+                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                        Fundamentals
+                      </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>Operating Systems</li>
                         <li>Functional & OO Programming</li>
@@ -103,9 +105,11 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li>
+                  <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold">Languages</h3>
+                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                        Languages
+                      </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>HTML, CSS & Tailwind</li>
                         <li>Javascript & Typescript</li>
@@ -118,9 +122,11 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li>
+                  <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold">Tools</h3>
+                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                        Tools
+                      </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>Linux & Windows</li>
                         <li>VsCode</li>
@@ -132,9 +138,11 @@ export default function Home() {
                     </section>
                   </li>
 
-                  <li>
+                  <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold">Cloud Stack</h3>
+                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                        Cloud Stack
+                      </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
                         <li>AWS</li>
                         <li>Microsoft Azure</li>
