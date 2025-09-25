@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <section className="flex flex-col space-y-2 py-2 my-1 bg-gray-100 text-xs w-11/12 sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
+    <section className="flex flex-col space-y-2 py-2 m-1 p-1 bg-gray-100 text-xs w-full sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
       <header className="justify-center justify-items-center space-y-2">
         <div
           className="select-none"
@@ -43,7 +43,7 @@ export default function Home() {
           />
         </div>
 
-        <section className="grid justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
+        <section className="grid justify-self-center text-left space-y-2 w-8/11 lg:w-2/3 p-1 border-2 border-green-400/40 rounded-md">
           <h1 className="text-center font-bold">
             Raymond Mawina / LeGlaringWizard
           </h1>
@@ -51,7 +51,7 @@ export default function Home() {
 
           <p>
             I specialize in backend because I love tinkering with complex
-            systems that enable to the web and other systems.
+            systems that enable the web and other systems.
           </p>
 
           <p>
@@ -61,7 +61,7 @@ export default function Home() {
         </section>
       </header>
       <main>
-        <section className="flex flex-col justify-self-center text-left space-y-2 w-10/11 lg:w-2/3 py-1 px-2 border-2 border-yellow-500/60 rounded-md min-h-70 max-h-70 lg:min-h-100 lag:max-h-dvh ">
+        <section className="flex flex-col justify-self-center text-left space-y-2 w-full lg:w-2/3 p-1 px-2 border-2 border-yellow-500/60 rounded-md min-h-80 lg:min-h-100 lag:max-h-dvh">
           <nav>
             <ul className="flex flex-wrap justify-between space-x-2 lg:space-x-2 w-full">
               {buttons.map((item) => (
@@ -87,109 +87,59 @@ export default function Home() {
             {activeButton === "Skills" && (
               //make this scrollable if too long
               <section className="grid space-y-2">
-                <ul className="grid space-y-1">
+                <ul className="grid grid-cols-2 gap-2 space-y-1">
                   <li>
                     <section>
                       <h3 className="font-bold">Fundamentals</h3>
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
+                        <li>Operating Systems</li>
+                        <li>Functional & OO Programming</li>
+                        <li>System Design & Analysis</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Design Patterns</li>
+                        <li>Databases: RDBMS & NoSQL</li>
+                        <li>API Design</li>
+                      </ul>
+                    </section>
+                  </li>
+
+                  <li>
+                    <section>
+                      <h3 className="font-bold">Languages</h3>
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
+                        <li>HTML, CSS & Tailwind</li>
+                        <li>Javascript & Typescript</li>
+                        <li>Node.js, React, Redux & Next.js</li>
+                        <li>Python, Flask & Django</li>
+                        <li>Java, Spring & SpringBoot</li>
+                        <li>C#, .NET & .NET Core</li>
+                        <li>Postgres, MySQL & MSSQL</li>
+                      </ul>
                     </section>
                   </li>
 
                   <li>
                     <section>
                       <h3 className="font-bold">Tools</h3>
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
+                        <li>Linux & Windows</li>
+                        <li>VsCode</li>
+                        <li>Shell and Vim</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                      </ul>
                     </section>
                   </li>
 
                   <li>
                     <section>
                       <h3 className="font-bold">Cloud Stack</h3>
-                    </section>
-                  </li>
-
-                  <li>
-                    <section>
-                      <h3 className="font-bold">
-                        Programming Languages{" "}
-                        <button onClick={handleSkillCategoryToggle}>
-                          {showSkillCategory ? `[hide]` : `[show]`}
-                        </button>
-                      </h3>
-
-                      {showSkillCategory && (
-                        <ul className="space-y-1 max-h-25 lg:max-h-40 min-h-25 lg:min-h-40 overflow-y-auto">
-                          <li>
-                            <section className="px-2">
-                              <h4 className="font-bold">
-                                JavaScript / TypeScript
-                              </h4>
-                              <section className="px-2">
-                                <h5 className="font-bold">
-                                  Frameworks & Libraries
-                                </h5>
-                                <ul className="px-2">
-                                  <li>Node.js</li>
-                                  <li>Express.js</li>
-                                  <li>React</li>
-                                  <li>Redux</li>
-                                  <li>Next.js</li>
-                                </ul>
-                              </section>
-                            </section>
-                          </li>
-
-                          <li>
-                            <section className="px-2">
-                              <h4 className="font-bold">
-                                JavaScript / TypeScript
-                              </h4>
-                              <section className="px-2">
-                                <h5 className="font-bold">
-                                  Frameworks & Libraries
-                                </h5>
-                                <ul className="px-2">
-                                  <li>Node.js</li>
-                                  <li>Express.js</li>
-                                  <li>React</li>
-                                  <li>Redux</li>
-                                  <li>Next.js</li>
-                                </ul>
-                              </section>
-                            </section>
-                          </li>
-
-                          <li>
-                            <section className="px-2">
-                              <h4 className="font-bold">
-                                JavaScript / TypeScript
-                              </h4>
-                              <section className="px-2">
-                                <h5 className="font-bold">
-                                  Frameworks & Libraries
-                                </h5>
-                                <ul className="px-2">
-                                  <li>Node.js</li>
-                                  <li>Express.js</li>
-                                  <li>React</li>
-                                  <li>Redux</li>
-                                  <li>Next.js</li>
-                                </ul>
-                              </section>
-                            </section>
-                          </li>
-                        </ul>
-                      )}
-                    </section>
-                  </li>
-
-                  <li>
-                    <section>
-                      <h3 className="font-bold">DevOps</h3>
-                    </section>
-                  </li>
-
-                  <li>
-                    <section>
-                      <h3 className="font-bold">Soft Skills</h3>
+                      <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
+                        <li>AWS</li>
+                        <li>Microsoft Azure</li>
+                        <li>GCP</li>
+                      </ul>
                     </section>
                   </li>
                 </ul>
@@ -199,7 +149,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <section className="flex flex-col justify-self-center text-center space-y-2 w-10/11 lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
+        <section className="flex flex-col justify-self-center text-center space-y-2 w-full lg:w-2/3 p-2 border-2 border-green-400/40 rounded-md">
           <p>🪄 Forged in code by LeGlaringWizard · 2025</p>
         </section>
       </footer>
