@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <section className="flex flex-col space-y-2 py-2 m-1 p-1 bg-gray-100 text-xs w-full sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center rounded-md min-h-fit h-fit">
+    <section className="flex flex-col space-y-2 p-2 bg-gray-100 text-xs w-full sm:w-3/4 md:w-3/5 2xl:w-3/6 justify-self-center min-h-fit h-fit">
       <header className="justify-center justify-items-center space-y-2">
         <div
           className="select-none"
