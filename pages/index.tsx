@@ -90,7 +90,7 @@ export default function Home() {
                 <ul className="grid grid-cols-2 gap-2 space-y-1">
                   <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
                         Fundamentals
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -107,7 +107,7 @@ export default function Home() {
 
                   <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
                         Languages
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -124,7 +124,7 @@ export default function Home() {
 
                   <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
                         Tools
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
@@ -140,7 +140,7 @@ export default function Home() {
 
                   <li className="w-4/5">
                     <section>
-                      <h3 className="font-bold border-b-2 border-purple-400/30">
+                      <h3 className="font-bold border-b-2 border-t-2 px-1 border-purple-400/70 bg-pink-300/40">
                         Cloud Stack
                       </h3>
                       <ul className="space-y-1 min-h-22 lg:min-h-35 mt-1 px-2">
