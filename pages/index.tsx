@@ -9,15 +9,6 @@ export default function Home() {
     setActiveButton(button === activeButton ? null : button);
   };
 
-  const [showSkillCategory, setShowSkillCategory] = useState<Boolean>(false);
-  const handleSkillCategoryToggle = () => {
-    setShowSkillCategory(() => !showSkillCategory);
-  };
-
-  const prevent = (e: React.SyntheticEvent) => {
-    e.preventDefault();
-  };
-
   return (
     <section className="flex flex-col items-center space-y-6 p-4 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
       {/* ===== Header ===== */}
@@ -204,14 +195,14 @@ export default function Home() {
               <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
                 {[
                   {
-                    name: "Makoya Weighbridge App",
+                    name: "Weighbridge Website",
                     tech: "Next.js, TypeScript, Node.js",
                     description:
                       "Automates and digitizes weighbridge processes for mineral storage facilities.",
                     link: "#",
                   },
                   {
-                    name: "Umbono Cloud Contact Center",
+                    name: "Contact Center",
                     tech: "React, Node.js, AWS",
                     description:
                       "Cloud-based solution for proactive engagement and community management on LinkedIn.",
