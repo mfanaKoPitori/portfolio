@@ -16,7 +16,7 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
     <>
       <nav className="mb-6">
         <ul className="flex flex-wrap justify-center sm:justify-around gap-3 w-full">
-          {buttonList.map((item) => (
+          {buttonList?.map((item) => (
             <li key={item}>
               <button
                 className={`w-fit sm:w-24 text-sm py-2 px-4 rounded-t-md border-b-2 transition-colors duration-200 ${
