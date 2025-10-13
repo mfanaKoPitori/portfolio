@@ -16,7 +16,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
   return (
     <>
       <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
-        {projectList.map((project, idx) => (
+        {projectList?.map((project, idx) => (
           <section
             key={idx}
             className="flex flex-col bg-white/80 rounded-md border border-gray-200 p-5 shadow-sm hover:shadow-lg transition-shadow duration-200 w-full min-h-[14rem]"
