@@ -1,1 +1,1 @@
-# Portfolio showcasing projects and recently works
+# Portfolio showcasing projects and recent works
