@@ -4,12 +4,11 @@ import { useState } from "react";
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
 import Skills from "./components/Skills/Index";
-import Experience from "./components/Experience/Index";
 import Projects from "./components/Projects/Index";
 import NavigationTabs from "./components/NavigationTabs/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["Skills", "Projects", "Experience"]);
+  const [buttonList, _] = useState(["Skills", "Projects"]);
 
   const [activeButton, setActiveButton] = useState<string>("Skills");
   const handleButtonClick = (item: string) => {
@@ -34,9 +33,6 @@ export default function Home() {
           <section className="py-3 px-2 min-h-[24rem] lg:min-h-[30rem] max-h-[90vh] overflow-auto">
             {/* Skills */}
             {activeButton === "Skills" && <Skills />}
-
-            {/* Experience */}
-            {activeButton === "Experience" && <Experience />}
 
             {/* Projects */}
             {activeButton === "Projects" && <Projects />}
