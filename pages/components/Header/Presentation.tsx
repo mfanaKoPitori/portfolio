@@ -16,6 +16,8 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
           alt=""
           priority
           quality={80}
+          placeholder="blur"
+          blurDataURL="/background_small.webp"
           className="w-full h-full object-cover absolute inset-0"
           width={1920}
           height={1080}
