@@ -9,7 +9,7 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
   return (
     <>
-      <header className="relative flex flex-col lg:flex-row items-center justify-between gap-6 p-6 w-full rounded-md shadow-md overflow-hidden">
+      <header className="relative flex flex-col lg:flex-row items-center justify-between gap-2 p-2 w-full rounded-md shadow-md overflow-hidden">
 
         <Image
           src="/background.webp"
@@ -28,7 +28,7 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
         <section className="absolute inset-0 bg-slate-900/10 rounded-md" />
 
         {/* Profile Image */}
-        <section className="relative z-10 flex justify-center w-full lg:w-1/3 -mt-4 lg:-mt-0">
+        <section className="relative z-10 flex justify-center w-4/11 lg:w-1/3 lg:-mt-0">
           <section
             className="select-none"
             onContextMenu={(e) => e.preventDefault()}
@@ -47,13 +47,13 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
         </section>
 
         {/* Text Section */}
-        <section className="relative z-10 grid space-y-3 p-5 bg-gray-600/40 backdrop-blur-sm rounded-lg text-left w-full lg:w-2/3">
-          <h1 className="text-2xl font-bold text-center lg:text-left text-amber-500/70">
+        <section className="relative z-10 grid space-y-2 py-1 px-2 bg-gray-600/40 backdrop-blur-sm rounded-lg text-left w-full lg:w-2/3">
+          <h1 className="text-lg lg:text-2xl  font-bold text-center lg:text-left text-amber-500/70">
             {fullname}
           </h1>
 
           {bio?.map((bioStr, index) => (
-            <p key={index} className="leading-relaxed text-gray-200">{bioStr}</p>
+            <p key={index} className="leading-relaxed text-gray-200 text-xs">{bioStr}</p>
           ))}
         </section>
       </header>
