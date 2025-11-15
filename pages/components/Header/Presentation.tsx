@@ -9,7 +9,17 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
   return (
     <>
-      <header className="relative flex flex-col lg:flex-row items-center justify-between gap-6 p-6 w-full bg-[url('/background.jpg')] bg-cover bg-center rounded-md shadow-md overflow-hidden">
+      <header className="relative flex flex-col lg:flex-row items-center justify-between gap-6 p-6 w-full rounded-md shadow-md overflow-hidden">
+
+        <Image
+          src="/background.jpg"
+          alt=""
+          fill
+          priority
+          quality={80}
+          style={{ objectFit: "cover" }}
+        />
+
         {/* Soft Overlay */}
         <section className="absolute inset-0 bg-slate-900/10 rounded-md" />
 
@@ -38,8 +48,8 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
             {fullname}
           </h1>
 
-          {bio?.map((bioStr) => (
-            <p className="leading-relaxed text-gray-200">{bioStr}</p>
+          {bio?.map((bioStr, index) => (
+            <p key={index} className="leading-relaxed text-gray-200">{bioStr}</p>
           ))}
         </section>
       </header>

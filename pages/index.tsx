@@ -19,26 +19,21 @@ export default function Home() {
     <section className="flex flex-col items-center space-y-6 p-4 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
       <Header />
 
-      {/* ===== Main Content ===== */}
+      {/* ===== Main Content ===== 
       <main className="flex justify-center w-full">
-        <section className="flex flex-col w-full max-w-5xl bg-gray-50/80 border border-yellow-500/40 rounded-md p-5 shadow-md">
-          {/* Navigation Tabs */}
+        <section className="flex flex-col w-full max-w-5xl bg-gray-50/80 border border-yellow-500/40 rounded-md p-5 shadow-md">    
           <NavigationTabs
             activeButton={activeButton}
             buttonList={buttonList}
             handleButtonClick={handleButtonClick}
           />
 
-          {/* Active Section */}
           <section className="py-3 px-2 min-h-[24rem] lg:min-h-[30rem] max-h-[90vh] overflow-auto">
-            {/* Skills */}
             {activeButton === "Skills" && <Skills />}
-
-            {/* Projects */}
             {activeButton === "Projects" && <Projects />}
           </section>
         </section>
-      </main>
+      </main>*/}
 
       <Footer />
     </section>
