@@ -12,12 +12,13 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
       <header className="relative flex flex-col lg:flex-row items-center justify-between gap-6 p-6 w-full rounded-md shadow-md overflow-hidden">
 
         <Image
-          src="/background.jpg"
+          src="/background.webp"
           alt=""
-          fill
           priority
           quality={80}
-          style={{ objectFit: "cover" }}
+          className="w-full h-full object-cover absolute inset-0"
+          width={1920}   // required
+          height={1080}  // required
         />
 
         {/* Soft Overlay */}
