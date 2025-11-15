@@ -17,8 +17,9 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
           priority
           quality={80}
           className="w-full h-full object-cover absolute inset-0"
-          width={1920}   // required
-          height={1080}  // required
+          width={1920}
+          height={1080}
+          sizes="(max-width: 1024px) 100vw, 50vw"
         />
 
         {/* Soft Overlay */}
