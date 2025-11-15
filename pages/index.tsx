@@ -27,7 +27,7 @@ export default function Home() {
             handleButtonClick={handleButtonClick}
           />
 
-          <section className="py-3 px-2 min-h-[24rem] lg:min-h-[18rem] max-h-[62vh] overflow-auto">
+          <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] max-h-[62vh] overflow-auto">
             {activeButton === "Projects" && <Projects />}
           </section>
         </section>
