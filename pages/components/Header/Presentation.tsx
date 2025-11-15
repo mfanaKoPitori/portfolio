@@ -36,12 +36,16 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
             onMouseDown={(e) => e.preventDefault()}
           >
             <Image
-              src="/headshot.png"
+              src="/headshot.webp"
+              alt={`Headshot of ${fullname}`}
+              priority
+              placeholder="blur"
+              blurDataURL="/headshot_small.webp"
+              className="rounded-full border-4 border-amber-200/60 backdrop-blur-sm shadow-lg pointer-events-none"
               width={200}
               height={200}
-              alt={`Headshot of ${fullname}`}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               draggable={false}
-              className="rounded-full border-4 border-amber-200/60 backdrop-blur-sm shadow-lg pointer-events-none"
             />
           </section>
         </section>
