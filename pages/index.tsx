@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <section className="flex flex-col items-center space-y-2 p-2 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
+    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
       <Header />
 
       {/* ===== Main Content ===== */} 

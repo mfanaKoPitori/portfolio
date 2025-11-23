@@ -19,7 +19,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
         {projectList?.map((project, idx) => (
           <section
             key={idx}
-            className="flex flex-col bg-white/80 rounded-md border border-gray-200 p-2 shadow-sm hover:shadow-md transition-shadow duration-200 w-full min-h-[10rem]"
+            className="flex flex-col bg-white/80 rounded-md border border-gray-200 p-2 shadow-sm hover:shadow-md transition-shadow duration-200 w-full min-h-[8rem]"
           >
             <h3 className="font-semibold text-gray-800 text-lg">
               {project.name}
@@ -30,7 +30,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 text-amber-500 text-sm hover:underline"
+              className=" text-amber-500 text-sm hover:underline"
             >
               View Project
             </a>
