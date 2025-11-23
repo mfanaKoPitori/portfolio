@@ -12,12 +12,15 @@ export default function Home() {
   const [activeButton, setActiveButton] = useState<string>("Projects");
   const handleButtonClick = (item: string) => {
     setActiveButton(item === activeButton ? "" : item);
+      fetch("/api/tracker")
+      .then(res => res.json())
+      .then(data => console.log(`IP: ${data.ip} visited ${item}`));
   };
 
   useEffect(() => {
     fetch("/api/tracker")
       .then(res => res.json())
-      .then(data => console.log("Visitor IP:", data.ip));
+      .then(data => console.log(`IP: ${data.ip} visited website`));
   }, []);
 
   return (
