@@ -15,7 +15,7 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
   return (
     <>
       <nav className="mb-2">
-        <ul className="flex flex-wrap justify-left sm:justify-left gap-2 w-full py-1 px-2">
+        <ul className="flex flex-wrap justify-center sm:justify-left gap-2 w-full py-1 px-2">
           {buttonList?.map((item) => (
             <li key={item}>
               <button

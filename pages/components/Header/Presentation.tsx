@@ -10,7 +10,7 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
   return (
     <>
-      <header className="flex justify-between w-full rounded-md gap-2 items-center py-2 px-2">
+      <header className="flex justify-between w-full rounded-md space-x-2 items-center px-2">
         {/* Profile Image */}
         <section className="flex justify-center">
           <section
