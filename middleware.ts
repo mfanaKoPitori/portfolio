@@ -9,7 +9,5 @@ export function middleware(req: NextRequest) {
     req.headers.get("x-real-ip") ||                      // Nginx
     "Unknown IP";
 
-  console.log("Visitor IP:", ip);
-
   return NextResponse.next();
 }
