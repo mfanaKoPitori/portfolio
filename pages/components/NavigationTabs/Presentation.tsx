@@ -22,7 +22,7 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
                 className={`text-sm lg:text-md ${
                   activeButton === item
                     ? "border-amber-500 text-amber-600 font-semibold"
-                    : " text-gray-600 hover:text-gray-800"
+                    : " text-gray-600 hover:text-amber-800"
                 }`}
                 onClick={() => {
                   if (activeButton !== item) handleButtonClick(item);
