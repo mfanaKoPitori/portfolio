@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Index";
 import NavigationTabs from "./components/NavigationTabs/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["Projects"]);
+  const [buttonList, _] = useState(["About","Projects","Experiments", "Reading", "Blog"]);
 
   const [activeButton, setActiveButton] = useState<string>("Projects");
   const handleButtonClick = (item: string) => {
@@ -19,15 +19,15 @@ export default function Home() {
       <Header />
 
       {/* ===== Main Content ===== */} 
-      <main className="flex justify-center w-full">
-        <section className="flex flex-col w-full max-w-5xl bg-gray-50/80 border border-yellow-500/40 rounded-md p-2 shadow-md">    
+      <main className="flex flex-grow justify-center w-full">
+        <section className="flex flex-col w-full max-w-5xl p-2">    
           <NavigationTabs
             activeButton={activeButton}
             buttonList={buttonList}
             handleButtonClick={handleButtonClick}
           />
 
-          <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] max-h-[62vh] overflow-auto">
+          <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] overflow-auto">
             {activeButton === "Projects" && <Projects />}
           </section>
         </section>

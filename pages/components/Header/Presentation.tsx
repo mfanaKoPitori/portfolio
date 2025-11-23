@@ -4,31 +4,15 @@ import React from "react";
 interface HeaderInfoProps {
   fullname: string;
   bio: string[];
+  role: string;
 }
 
-const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
+const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
   return (
     <>
-      <header className="relative flex flex-col lg:flex-row items-center justify-between gap-2 p-2 w-full rounded-md shadow-md overflow-hidden">
-
-        <Image
-          src="/background.webp"
-          alt=""
-          priority
-          quality={80}
-          placeholder="blur"
-          blurDataURL="/background_small.webp"
-          className="w-full h-full object-cover absolute inset-0"
-          width={1920}
-          height={1080}
-          sizes="(max-width: 1024px) 100vw, 50vw"
-        />
-
-        {/* Soft Overlay */}
-        <section className="absolute inset-0 bg-slate-900/10 rounded-md" />
-
+      <header className="flex justify-between w-full rounded-md gap-2 items-center py-2 px-2">
         {/* Profile Image */}
-        <section className="relative z-10 flex justify-center w-4/11 lg:w-1/3 lg:-mt-0">
+        <section className="flex justify-center">
           <section
             className="select-none"
             onContextMenu={(e) => e.preventDefault()}
@@ -38,23 +22,23 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio }) => {
             <Image
               src="/headshot.png"
               alt={`Headshot of ${fullname}`}
-              className="rounded-full border-4 border-amber-200/60 backdrop-blur-sm shadow-lg pointer-events-none"
-              width={200}
-              height={200}
+              className="rounded-full border-2 border-amber-400/60 backdrop-blur-sm shadow-lg pointer-events-none"
+              width={60}
+              height={60}
               draggable={false}
             />
           </section>
         </section>
 
         {/* Text Section */}
-        <section className="relative z-10 grid space-y-2 py-1 px-2 bg-gray-600/40 backdrop-blur-sm rounded-lg text-left w-full lg:w-2/3">
-          <h1 className="text-lg lg:text-2xl  font-bold text-center lg:text-left text-amber-500/70">
+        <section className="grid lg:flex justify-end lg:justify-between w-full">
+          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-500/70">
             {fullname}
           </h1>
 
-          {bio?.map((bioStr, index) => (
-            <p key={index} className="leading-relaxed text-gray-200 text-xs">{bioStr}</p>
-          ))}
+          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-500/70">
+            {role}
+          </h1>
         </section>
       </header>
     </>

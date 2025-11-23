@@ -19,10 +19,10 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
           {buttonList?.map((item) => (
             <li key={item}>
               <button
-                className={`w-fit sm:w-24 text-lg lg:text-xl rounded-t-md border-b-2 transition-colors duration-200 ${
+                className={`text-sm lg:text-md ${
                   activeButton === item
                     ? "border-amber-500 text-amber-600 font-semibold"
-                    : "border-transparent text-gray-600 hover:text-gray-800 hover:border-gray-300"
+                    : " text-gray-600 hover:text-gray-800"
                 }`}
                 onClick={() => {
                   if (activeButton !== item) handleButtonClick(item);
