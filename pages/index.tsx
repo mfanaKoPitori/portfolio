@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Header from "./components/Header/Index";
 import Footer from "./components/Footer/Index";
@@ -13,6 +13,12 @@ export default function Home() {
   const handleButtonClick = (item: string) => {
     setActiveButton(item === activeButton ? "" : item);
   };
+
+  useEffect(() => {
+    fetch("/api/tracker")
+      .then(res => res.json())
+      .then(data => console.log("Visitor IP:", data.ip));
+  }, []);
 
   return (
     <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
