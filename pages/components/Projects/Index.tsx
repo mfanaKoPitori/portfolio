@@ -14,32 +14,32 @@ interface ProjectInfoProps {}
 const Projects: React.FC<ProjectInfoProps> = () => {
   const [projectList, _] = useState<ProjectProps[]>([
     {
-      name: "Weighbridge Website",
-      tech: "Next.js, TypeScript, Node.js",
+      name: "Gold Rush Website Game",
+      tech: "HTML, CSS, React, Redux",
       description:
-        "Automates and digitizes weighbridge processes for mineral storage facilities.",
-      link: "#",
+        "Little fun collecting gold bars.",
+      link: "https://goldrush.ray-mawina.co.za/",
     },
     {
-      name: "Contact Center",
-      tech: "React, Node.js, AWS",
+      name: "Sharp Memory Website Game",
+      tech: "HTML, CSS, React, Redux",
       description:
-        "Cloud-based solution for proactive engagement and community management on LinkedIn.",
-      link: "#",
+        "Little fun remembering colors and their positions.",
+      link: "https://sharpmemory.ray-mawina.co.za/",
     },
     {
-      name: "Real-time Transcription Web App",
-      tech: "React, WebRTC, AWS Transcribe",
+      name: "UpOrDown Pilot Guide Pilot Mobile App",
+      tech: "React Native, Expo",
       description:
-        "Captures and transcribes VoIP calls in real-time with a browser-based client.",
-      link: "#",
+        "Helps pilot remember if they are ascending or descending.",
+      link: "https://drive.google.com/file/d/1uT5KZERjPBtthA0kg54pNX2e4V0N6Mx9/view?usp=drive_link",
     },
     {
-      name: "Personal Portfolio Website",
-      tech: "Next.js, Tailwind CSS",
+      name: "TrainTravails Schedule Trace Mobile App",
+      tech: "React Native, Expo",
       description:
-        "Showcases projects, skills, and professional experience with subtle animations.",
-      link: "#",
+        "Helps you trace and find when the next train to your destination is coming.",
+      link: "https://drive.google.com/file/d/1fF_C2G6dUcSaz7pfpQMQ2hBJSV_AbYD3/view?usp=drive_link",
     }
   ]);
   return <Presentation projectList={projectList} />;

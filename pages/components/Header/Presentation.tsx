@@ -32,11 +32,11 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
 
         {/* Text Section */}
         <section className="grid lg:flex justify-end lg:justify-between w-full">
-          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-500/70">
+          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-400">
             {fullname}
           </h1>
 
-          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-500/70">
+          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-400">
             {role}
           </h1>
         </section>

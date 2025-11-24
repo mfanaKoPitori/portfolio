@@ -15,7 +15,7 @@ interface ProjectInfoProps {
 const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
   return (
     <>
-      <section className="grid sm:grid-cols-1 lg:grid-cols-2 gap-1">
+      <section className="grid grid-cols-1 gap-1">
         {projectList?.map((project, idx) => (
           <section
             key={idx}
