@@ -14,21 +14,21 @@ interface ProjectInfoProps {}
 const Projects: React.FC<ProjectInfoProps> = () => {
   const [projectList, _] = useState<ProjectProps[]>([
     {
-      name: "Gold Rush Website Game",
+      name: "Gold Rush Desktop Game",
       tech: "HTML, CSS, React, Redux",
       description:
         "Little fun collecting gold bars.",
       link: "https://goldrush.ray-mawina.co.za/",
     },
     {
-      name: "Sharp Memory Website Game",
+      name: "Sharp Memory Responsive Website Game",
       tech: "HTML, CSS, React, Redux",
       description:
         "Little fun remembering colors and their positions.",
       link: "https://sharpmemory.ray-mawina.co.za/",
     },
     {
-      name: "UpOrDown Pilot Guide Pilot Mobile App",
+      name: "UpOrDown Pilot Guide Mobile App",
       tech: "React Native, Expo",
       description:
         "Helps pilot remember if they are ascending or descending.",
