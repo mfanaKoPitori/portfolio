@@ -36,7 +36,7 @@ export default function Home() {
       <main className="flex flex-grow justify-center w-full">
         <section className="flex flex-col w-full max-w-5xl p-2">    
           <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] overflow-auto">
-            <p>About page under construction</p>
+            <p>Reading page under construction</p>
           </section>
         </section>
       </main> 

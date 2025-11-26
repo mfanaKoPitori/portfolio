@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 import React from "react";
 
 interface NavigationTabsInfoProps {
@@ -18,7 +19,8 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
         <ul className="flex flex-wrap justify-center sm:justify-left gap-2 w-full py-1 px-2">
           {buttonList?.map((item) => (
             <li key={item}>
-              <button
+              <Link
+                href={item === "About" ? "/":`/${item.toLocaleLowerCase()}`}
                 className={`text-sm lg:text-md ${
                   activeButton === item
                     ? "border-amber-500 text-amber-600 font-semibold"
@@ -29,7 +31,7 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
                 }}
               >
                 {item}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>
