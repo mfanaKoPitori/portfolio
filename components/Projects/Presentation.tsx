@@ -44,8 +44,9 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                   />
 
                   <section className="hidden md:flex md:space-x-4">
-                    {[1,2,3,4].map((num) => (
+                    {[1,2,3,4].map((num, index) => (
                       <Image
+                        key={index}
                         src={`/images/projects/${project.pseudo}/${project.pseudo}_${num}.jpg`}
                         alt={`project ${project.pseudo} image ${num}`}
                         className="rounded-sm border-2  h-[80px] w-[80px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
