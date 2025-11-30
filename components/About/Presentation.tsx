@@ -27,7 +27,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
           <h1>Educational History</h1>
-          <section>
+          <section className="flex flex-col px-2 my-2 space-y-2">
             <section>
                 <h1>Mathematics and Science | 2005 - 2016 | Primary and High School | Completed</h1>
             </section>
@@ -48,7 +48,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
           <h1>Work Experience</h1>
-          <section>
+          <section className="flex flex-col px-2 my-2 space-y-2">
             <section>
                 <h1>Field Worker | 2022 - 2022 | Statistics SA</h1>
             </section>
@@ -74,7 +74,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
           <h1>Hobbies</h1>
-          <section>
+          <section className="flex flex-col px-2 my-2 space-y-2">
             <p>Professional wrestling Fanatic | WWE | AEW | NJPW</p>
             <p>Morning and evening jogging.</p>
             <p>Stretching and light cardio exercises.</p>
@@ -85,7 +85,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
           <h1>Skills</h1>
-          <section>
+          <section className="flex flex-col px-2 my-2 space-y-2">
             <p>Frontend: HTML, CSS, Tailwind, React</p>
             <p>Backend: Javascript, Typescript, Express, Python, Flask, FastAPI, Django REST</p>
             <p>Databases: MySQL, Postgres, MongoDB, Redis</p>
