@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header/Index";
 import Footer from "../components/Footer/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
+import About from "@/components/About/Index";
 
 export default function Home() {
   const [buttonList, _] = useState(["About","Projects","Experiments", "Analytics", "Reading"]);
@@ -32,8 +33,8 @@ export default function Home() {
        handleButtonClick={handleButtonClick}
       />
 
-      <main className="flex flex-grow w-fit">
-        <p>About page under construction</p>
+      <main className="flex flex-grow justify-center w-full">
+        {<About />}
       </main> 
 
       <Footer />
