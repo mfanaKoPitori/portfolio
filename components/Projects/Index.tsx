@@ -4,6 +4,7 @@ import Presentation from "./Presentation";
 
 interface ProjectProps {
   name: string;
+  pseudo: string;
   tech: string;
   description: string;
   link: string;
@@ -15,6 +16,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
   const [projectList, _] = useState<ProjectProps[]>([
     {
       name: "Gold Rush Desktop Game",
+      pseudo: "gold_rush",
       tech: "HTML, CSS, React, Redux.",
       description:
         "Little fun collecting gold bars.",
@@ -22,6 +24,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     },
     {
       name: "Sharp Memory Responsive Website Game",
+      pseudo: "sharp_memory",
       tech: "HTML, CSS, React, Redux.",
       description:
         "Little fun remembering colors and their positions.",
@@ -29,6 +32,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     },
     {
       name: "UpOrDown Pilot Guide Mobile App",
+      pseudo: "up_or_down",
       tech: "React Native, Expo, CSS, React, Redux.",
       description:
         "Helps pilot remember if they are ascending or descending.",
@@ -36,6 +40,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     },
     {
       name: "TrainTravails Schedule Trace Mobile App",
+      pseudo: "train_travails",
       tech: "React Native, Expo, CSS, React, Redux.",
       description:
         "Helps you trace and find when the next train to your destination is coming.",

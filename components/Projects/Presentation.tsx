@@ -3,6 +3,7 @@ import React from "react";
 
 interface ProjectProps {
   name: string;
+  pseudo: string;
   tech: string;
   description: string;
   link: string;
@@ -34,46 +35,46 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
 
                 <section className="w-1/4 md:w-8/11">
                   <Image
-                      src="/headshot_pixel_nice_2.png"
+                      src={`/images/projects/${project.pseudo}/${project.pseudo}_1.jpg`}
                       alt={`Headshot`}
-                      className="md:hidden rounded-sm border-2 border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      className="md:hidden rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={60}
                       height={60}
                       draggable={false}
                   />
 
-                  <section className="hidden md:flex md:space-x-4 ">
+                  <section className="hidden md:flex md:space-x-4">
                     <Image
-                      src="/headshot_pixel_nice_2.png"
-                      alt={`Headshot`}
-                      className="rounded-sm border-2 border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      src={`/images/projects/${project.pseudo}/${project.pseudo}_1.jpg`}
+                      alt={`project image 2`}
+                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={60}
                       height={60}
                       draggable={false}
                     />
 
                     <Image
-                      src="/headshot_pixel_nice_2.png"
+                      src={`/images/projects/${project.pseudo}/${project.pseudo}_2.jpg`}
                       alt={`Headshot`}
-                      className="rounded-sm border-2 border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={60}
                       height={60}
                       draggable={false}
                     />
 
                     <Image
-                      src="/headshot_pixel_nice_2.png"
+                      src={`/images/projects/${project.pseudo}/${project.pseudo}_3.jpg`}
                       alt={`Headshot`}
-                      className="rounded-sm border-2 border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={60}
                       height={60}
                       draggable={false}
                     />
 
                     <Image
-                      src="/headshot_pixel_nice_2.png"
+                      src={`/images/projects/${project.pseudo}/${project.pseudo}_4.jpg`}
                       alt={`Headshot`}
-                      className="rounded-sm border-2 border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={60}
                       height={60}
                       draggable={false}

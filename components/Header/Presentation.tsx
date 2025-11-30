@@ -19,7 +19,7 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
             onMouseDown={(e) => e.preventDefault()}
           >
             <Image
-              src="/headshot.png"
+              src="/images/headshot_pixel_nice_2.png"
               alt={`Headshot of ${fullname}`}
               className="rounded-full border-2 border-amber-400/60 backdrop-blur-sm shadow-lg pointer-events-none"
               width={60}
