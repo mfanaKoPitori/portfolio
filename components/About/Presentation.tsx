@@ -9,15 +9,15 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
   return (
     <>
       <section className="flex flex-col w-6/11 space-y-2 text-xs">
-        <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-4 px-6">
-          <section>
+        <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-3 px-4">
+          <section className="flex flex-col px-2 space-y-2">
             <p>Raymond Mawina is an patient, open-minded, honest, hardworking individual.</p>
             <p>He likes seeking out problems and solving them.</p>
             <p>He is a bit shy, but with time he warms to you and starts communicating with confidence.</p>
             <p>He is passionable about tech, particularly software development.</p>
           </section>
 
-          <section className="flex space-x-3">
+          <section className="flex flex-row px-2 space-x-2">
             <p>Email</p>
             <p>Linkedin</p>
             <p>Phone Number</p>
@@ -25,7 +25,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
+        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Educational History</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
             <section>
@@ -46,7 +46,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
+        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Work Experience</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
             <section>
@@ -72,7 +72,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
         </section>
 
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
+        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Hobbies</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
             <p>Professional wrestling Fanatic | WWE | AEW | NJPW</p>
@@ -83,7 +83,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-4 px-6">
+        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Skills</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
             <p>Frontend: HTML, CSS, Tailwind, React</p>
