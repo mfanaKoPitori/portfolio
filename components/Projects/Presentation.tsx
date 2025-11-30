@@ -36,49 +36,24 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 <section className="w-1/4 md:w-8/11">
                   <Image
                       src={`/images/projects/${project.pseudo}/${project.pseudo}_1.jpg`}
-                      alt={`Headshot`}
-                      className="md:hidden rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
-                      width={60}
-                      height={60}
+                      alt={`project ${project.pseudo} image 1`}
+                      className="md:hidden rounded-sm border-2 h-[80px] w-[80px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      width={80}
+                      height={80}
                       draggable={false}
                   />
 
                   <section className="hidden md:flex md:space-x-4">
-                    <Image
-                      src={`/images/projects/${project.pseudo}/${project.pseudo}_1.jpg`}
-                      alt={`project image 2`}
-                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
-                      width={60}
-                      height={60}
-                      draggable={false}
-                    />
-
-                    <Image
-                      src={`/images/projects/${project.pseudo}/${project.pseudo}_2.jpg`}
-                      alt={`Headshot`}
-                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
-                      width={60}
-                      height={60}
-                      draggable={false}
-                    />
-
-                    <Image
-                      src={`/images/projects/${project.pseudo}/${project.pseudo}_3.jpg`}
-                      alt={`Headshot`}
-                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
-                      width={60}
-                      height={60}
-                      draggable={false}
-                    />
-
-                    <Image
-                      src={`/images/projects/${project.pseudo}/${project.pseudo}_4.jpg`}
-                      alt={`Headshot`}
-                      className="rounded-sm border-2  h-[60px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
-                      width={60}
-                      height={60}
-                      draggable={false}
-                    />
+                    {[1,2,3,4].map((num) => (
+                      <Image
+                        src={`/images/projects/${project.pseudo}/${project.pseudo}_${num}.jpg`}
+                        alt={`project ${project.pseudo} image ${num}`}
+                        className="rounded-sm border-2  h-[80px] w-[80px] border-amber-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                        width={80}
+                        height={80}
+                        draggable={false}
+                      />
+                    ))}
                   </section>
                 </section>
               </section>
