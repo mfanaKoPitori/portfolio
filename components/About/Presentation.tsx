@@ -153,11 +153,10 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Hobbies</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
-            <p>Professional wrestling Fanatic | WWE | AEW | NJPW</p>
-            <p>Morning and evening jogging.</p>
-            <p>Stretching and light cardio exercises.</p>
-            <p>Baking bread, cookies and cakes.</p>
-            <p>Moving picture | Asian Films | Anime </p>
+            <p>Sports: Professional wrestling | F1 Racing</p>
+            <p>Exercise: Morning and evening jogging | Stretching and light cardio exercises.</p>
+            <p>Harmonic: Baking bread, cookies and cakes | Preparing and drink tea. </p>
+            <p>Entertainment: Superhero Films | Horror Films | Asian Films | Anime | Manga. </p>
           </section>
         </section>
 
