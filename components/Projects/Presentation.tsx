@@ -33,7 +33,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                   <p className="text-gray-500 text-xs italic text-wrap w-7/11 mt-2">{project.tech}</p>
                 </section>
 
-                <section className="w-1/4 md:w-11/11">
+                <section className="w-1/4 md:w-8/11">
                   <Image
                       src="/headshot_pixel_nice_2.png"
                       alt={`Headshot`}
@@ -43,7 +43,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                       draggable={false}
                   />
 
-                  <section className="hidden md:flex md:space-x-1 ">
+                  <section className="hidden md:flex md:space-x-4 ">
                     <Image
                       src="/headshot_pixel_nice_2.png"
                       alt={`Headshot`}

@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["About","Projects","Experiments", "Analytics", "Reading List"]);
+  const [buttonList, _] = useState(["About","Projects","Experiments", "Analytics", "Reading"]);
 
   const [activeButton, setActiveButton] = useState<string>("About");
   const handleButtonClick = (item: string) => {
