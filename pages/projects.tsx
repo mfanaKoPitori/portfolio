@@ -33,12 +33,8 @@ export default function Home() {
        handleButtonClick={handleButtonClick}
       />
 
-      <main className="flex flex-grow justify-center w-full">
-        <section className="flex flex-col w-fit p-2">    
-          <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] overflow-auto">
-            {<Projects />}
-          </section>
-        </section>
+      <main className="flex flex-grow w-fit">
+        {<Projects />}
       </main> 
 
       <Footer />
