@@ -23,7 +23,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full mx-auto min-h-screen">
+    <section className="flex flex-col items-center space-y-2 p-3 bg-gray-100 text-xs w-full mx-auto min-h-screen">
       <Header />
 
       <NavigationTabs
