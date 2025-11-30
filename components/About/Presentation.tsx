@@ -17,31 +17,57 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
             <p>He is passionable about tech, particularly software development.</p>
           </section>
 
-          <section className="flex flex-row px-2 space-x-2">
-            <p>Email</p>
-            <p>Linkedin</p>
-            <p>Phone Number</p>
-            <p>Github</p>
+          <section className="flex flex-col px-2 space-x-2 w-1/4 space-y-2">
+            <section className="flex flex-col space-x-2">
+              <p>rmawina@gmail.com</p>
+              <p>0715666626</p>
+            </section>
+
+            <section className="flex flex-row justify-between space-x-2">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-amber-500 text-md hover:underline"
+              >
+                Linkedin
+              </a>
+
+              <a
+                href="https://www.github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-amber-500 text-md hover:underline"
+              >
+                Github
+              </a>
+            
+            </section>
           </section>
         </section>
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Educational History</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
-            <section>
-                <h1>Mathematics and Science | 2005 - 2016 | Primary and High School | Completed</h1>
+            <section className="flex flex-col-4 space-x-2 w-7/8">
+                <p className="w-2/5">Mathematics and Science</p>
+                <p className="w-1/5">2005 - 2016</p>
+                <p className="w-1/5">Primary and High School</p>
+                <p className="w-1/5">Completed</p>
             </section>
 
-            <section>
-                <h1>Bachelors in Information Technology |  2018 - 2020 | University of Pretoria |  Incomplete</h1>
+            <section className="flex flex-col-4 space-x-2 w-7/8">
+                <p className="w-2/5">Bachelors in Information Technology</p>
+                <p className="w-1/5">2018 - 2020 </p>
+                <p className="w-1/5">University of Pretoria </p>
+                <p className="w-1/5">Incompleted</p>
             </section>
 
-            <section>
-                <h1>National Certificate In Information Technology | 2022 - 2023 | Umuzi Photo Club | Completed</h1>
-            </section>
-
-            <section>
-                <h1>Bsc in Informatics | 2026 - Present | University of South Africa | In program</h1>
+            <section className="flex flex-col-4 space-x-2 w-7/8">
+                <p className="w-2/5">National Certificate In Information Technology</p>
+                <p className="w-1/5">2022 - 2023</p>
+                <p className="w-1/5">Umuzi Photo Club</p>
+                <p className="w-1/5">Completed</p>
             </section>
           </section>
         </section>
@@ -49,24 +75,40 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Work Experience</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
-            <section>
-                <h1>Field Worker | 2022 - 2022 | Statistics SA</h1>
-            </section>
-       
-            <section>
-                <h1>Software Developer Apprentice | 2022 - 2023 | Umuzi Photo Club</h1>
-            </section>
-
-            <section>
-                <h1>Software Developer Intern | 2023 - 2023 | Umuzi Photo Club</h1>
+            <section className="flex flex-col-3 space-x-2 w-7/8">
+                <p className="w-2/5">Field Worker </p>
+                <p className="w-1/5">2022 - 2022</p>
+                <p className="w-1/5">Statistics SA</p>
+                <p className="w-1/5"></p>
             </section>
 
-            <section>
-                <h1>Junior Software Developer | 2023 - 2024 | Umuzi Photo Club</h1>
+            <section className="flex flex-col-3 space-x-2 w-7/8">
+                <p className="w-2/5">Software Developer Apprentice</p>
+                <p className="w-1/5">2022 - 2023 </p>
+                <p className="w-1/5">Umuzi Photo Club</p>
+                <p className="w-1/5"></p>
             </section>
 
-            <section>
-                <h1>Intermediate Software Developer | 2024 - Present | Umbono Cloud Services</h1>
+            <section className="flex flex-col-3 space-x-2 w-7/8">
+                <p className="w-2/5">Software Developer Intern</p>
+                <p className="w-1/5">2023 - 2023</p>
+                <p className="w-1/5">Umuzi Photo Club</p>
+                <p className="w-1/5"></p>
+            </section>
+
+            <section className="flex flex-col-3 space-x-2 w-7/8">
+                <p className="w-2/5">Junior Software Developer</p>
+                <p className="w-1/5">2023 - 2024</p>
+                <p className="w-1/5">Umuzi Photo Club</p>
+                <p className="w-1/5"></p>
+
+            </section>
+
+            <section className="flex flex-col-3 space-x-2 w-7/8">
+                <p className="w-2/5">Intermediate Software Developer</p>
+                <p className="w-1/5">2024 - Present</p>
+                <p className="w-1/5">Umbono Cloud Services</p>
+                <p className="w-1/5"></p>
             </section>
           </section>
         </section>
