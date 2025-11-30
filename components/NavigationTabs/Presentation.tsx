@@ -15,15 +15,15 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
 }) => {
   return (
     <>
-      <nav className="mb-2">
-        <ul className="flex flex-wrap justify-center sm:justify-left gap-2 w-full py-1 px-2">
+      <nav className="mb-2 flex flex-col justify-center items-center w-full">
+        <ul className="flex flex-wrap justify-center sm:justify-left gap-2 w-7/11 py-1 px-2">
           {buttonList?.map((item) => (
             <li key={item}>
               <Link
                 href={item === "About" ? "/":`/${item.toLocaleLowerCase()}`}
                 className={`text-sm lg:text-md ${
                   activeButton === item
-                    ? "border-amber-500 text-amber-600 font-semibold"
+                    ? "border-amber-500 text-amber-600"
                     : " text-gray-600 hover:text-amber-800"
                 }`}
                 onClick={() => {

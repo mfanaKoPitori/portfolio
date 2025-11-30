@@ -8,7 +8,7 @@ interface FooterInfoProps {
 
 function Footer() {
   const [footerInfo, _] = useState<FooterInfoProps>({
-    nickname: "LeGlaringWizard",
+    nickname: "Raymond Mawina",
   });
   return <Presentation nickname={footerInfo.nickname} />;
 }

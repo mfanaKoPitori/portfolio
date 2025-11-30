@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 
 import Header from "../components/Header/Index";
 import Footer from "../components/Footer/Index";
-import Projects from "../components/Projects/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
+    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full mx-auto min-h-screen">
       <Header />
 
       <NavigationTabs

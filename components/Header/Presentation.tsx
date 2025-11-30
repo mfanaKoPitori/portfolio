@@ -10,10 +10,9 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
   return (
     <>
-      <header className="flex justify-between w-full rounded-md space-x-2 items-center px-2">
+      <header className="flex flex-col justify-center w-full rounded-md space-x-2 space-y-1 items-center px-2">
         {/* Profile Image */}
-        <section className="flex justify-center">
-          <section
+        <section
             className="select-none"
             onContextMenu={(e) => e.preventDefault()}
             onDragStart={(e) => e.preventDefault()}
@@ -27,19 +26,12 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
               height={60}
               draggable={false}
             />
-          </section>
+       
         </section>
-
-        {/* Text Section */}
-        <section className="grid lg:flex justify-end lg:justify-between w-full">
-          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-400">
-            {fullname}
-          </h1>
-
-          <h1 className="text-xs lg:text-lg  font-bold text-center lg:text-left text-amber-400">
-            {role}
-          </h1>
-        </section>
+   
+        <h1 className="text-sm lg:text-lg font-bold text-center  text-amber-400">
+          {fullname}
+        </h1>
       </header>
     </>
   );

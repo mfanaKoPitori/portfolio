@@ -24,7 +24,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full max-w-4xl mx-auto min-h-screen">
+    <section className="flex flex-col items-center space-y-2 p-1 bg-gray-100 text-xs w-full mx-auto min-h-screen">
       <Header />
 
       <NavigationTabs
@@ -34,7 +34,7 @@ export default function Home() {
       />
 
       <main className="flex flex-grow justify-center w-full">
-        <section className="flex flex-col w-full max-w-5xl p-2">    
+        <section className="flex flex-col w-fit p-2">    
           <section className="py-2 px-2 min-h-[24rem] lg:min-h-[18rem] overflow-auto">
             {<Projects />}
           </section>
