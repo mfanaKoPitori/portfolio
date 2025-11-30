@@ -15,13 +15,12 @@ interface ProjectInfoProps {
 const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
   return (
     <>
-      <section className="grid grid-cols-1 gap-1 space-y-1">
+      <section className="grid grid-cols-1 h-fit gap-1 space-y-1">
         {projectList?.map((project, idx) => (
           <section
             key={idx}
-            className="flex flex-col justify-between bg-white/80 rounded-md border border-gray-200 py-4 px-6 shadow-sm hover:shadow-md transition-shadow duration-200 w-full min-h-[8rem]"
+            className="flex flex-col h-fit justify-between bg-white/80 rounded-md border border-gray-200 py-4 px-6 shadow-sm hover:shadow-md transition-shadow duration-200 w-full min-h-[8rem]"
           >
-  
             <section>
               <h3 className="font-semibold text-gray-800 text-md">
                 {project.name}
