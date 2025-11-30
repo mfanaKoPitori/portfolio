@@ -27,10 +27,10 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 {project.name}
               </h3>
               
-              <section className="flex justify-between py-2">
-                <section className="w-3/4 md:w-7/11">
-                  <p className="text-gray-700 text-xs text-wrap w-10/11 mt-2">{project.description}</p>
-                  <p className="text-gray-500 text-xs italic text-wrap w-10/11 mt-2">{project.tech}</p>
+              <section className="flex justify-between align-baseline py-2">
+                <section className="w-3/4 md:w-7/11 flex flex-col justify-between">
+                  <p className="text-gray-700 text-xs text-wrap w-10/11">{project.description}</p>
+                  <p className="text-gray-500 text-xs font-semibold italic text-wrap w-10/11">{project.tech}</p>
                 </section>
 
                 <section className="w-1/4 md:w-8/11">
@@ -60,7 +60,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
               </section>
             </section>
 
-            <section className="flex flex-wrap space-x-3">
+            <section className="flex flex-wrap font-bold space-x-3">
               <a
                 href={project.link}
                 target="_blank"
