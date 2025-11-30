@@ -48,7 +48,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
           <h1 className="font-bold">Educational History</h1>
-          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-20">
+          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-2">
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
                 <section>
                   <p className="font-semibold">Mathematics and Science</p>
@@ -102,7 +102,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
           <h1 className="font-bold">Work Experience</h1>
-          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-20">
+          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-2">
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
                 <section className="w-full lg:w-3/4">
                   <p className="font-semibold">Software Developer Apprentice</p>
