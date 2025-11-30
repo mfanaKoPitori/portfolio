@@ -85,8 +85,18 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 rel="noopener noreferrer"
                 className=" text-amber-500 text-md hover:underline"
               >
-                Documentation
+                Docs
               </a>
+
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" text-amber-500 text-md hover:underline"
+              >
+                Demo Video
+              </a>
+          
             </section>
           </section>
         ))}
