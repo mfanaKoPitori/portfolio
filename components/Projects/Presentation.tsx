@@ -29,8 +29,8 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
               
               <section className="flex justify-between py-2">
                 <section className="w-3/4 md:w-7/11">
-                  <p className="text-gray-700 text-xs text-wrap w-7/11 mt-2">{project.description}</p>
-                  <p className="text-gray-500 text-xs italic text-wrap w-7/11 mt-2">{project.tech}</p>
+                  <p className="text-gray-700 text-xs text-wrap w-10/11 mt-2">{project.description}</p>
+                  <p className="text-gray-500 text-xs italic text-wrap w-10/11 mt-2">{project.tech}</p>
                 </section>
 
                 <section className="w-1/4 md:w-8/11">
