@@ -8,19 +8,19 @@ interface AboutProps {
 const Presentation: React.FC<AboutProps> = ({ name }) => {
   return (
     <>
-      <section className="flex flex-col w-6/11 space-y-2 text-xs">
-        <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-3 px-4">
-          <section className="flex flex-col px-2 space-y-2">
+      <section className="flex flex-col w-full lg:w-6/11 space-y-2 text-xs">
+        <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-3 px-4 space-y-4">
+          <section className="flex flex-col px-2 space-y-1">
             <p>Raymond Mawina is an patient, open-minded, honest, hardworking individual.</p>
             <p>He likes seeking out problems and solving them.</p>
             <p>He is a bit shy, but with time he warms to you and starts communicating with confidence.</p>
             <p>He is passionable about tech, particularly software development.</p>
           </section>
 
-          <section className="flex flex-col px-2 space-x-2 w-1/4 space-y-2">
-            <section className="flex flex-col space-x-2">
-              <p>rmawina@gmail.com</p>
+          <section className="flex flex-col px-2 space-x-2 w-1/4 space-y-4">
+            <section className="flex flex-col space-x-1">
               <p>0715666626</p>
+              <p>rmawina@gmail.com</p>
             </section>
 
             <section className="flex flex-row justify-between space-x-2">
@@ -48,67 +48,103 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Educational History</h1>
-          <section className="flex flex-col px-2 my-2 space-y-2">
-            <section className="flex flex-col-4 space-x-2 w-7/8">
-                <p className="w-2/5">Mathematics and Science</p>
-                <p className="w-1/5">2005 - 2016</p>
-                <p className="w-1/5">Primary and High School</p>
-                <p className="w-1/5">Completed</p>
+          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-20">
+            <section className="columns-2 lg:columns-2 w-full lg:flex lg:justify-between">
+                <section>
+                  <p>Mathematics and Science</p>
+                  <p>Primary School</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2005 - 2011</p>
+                    <p>Completed</p>
+                </section>
             </section>
 
-            <section className="flex flex-col-4 space-x-2 w-7/8">
-                <p className="w-2/5">Bachelors in Information Technology</p>
-                <p className="w-1/5">2018 - 2020 </p>
-                <p className="w-1/5">University of Pretoria </p>
-                <p className="w-1/5">Incompleted</p>
+            <section className="columns-2 lg:columns-2 w-full lg:flex lg:justify-between">
+                <section>
+                  <p>Mathematics and Science</p>
+                  <p>High School</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2012 - 2016</p>
+                    <p>Completed</p>
+                </section>
             </section>
 
-            <section className="flex flex-col-4 space-x-2 w-7/8">
-                <p className="w-2/5">National Certificate In Information Technology</p>
-                <p className="w-1/5">2022 - 2023</p>
-                <p className="w-1/5">Umuzi Photo Club</p>
-                <p className="w-1/5">Completed</p>
+            <section className="columns-2 lg:columns-2 w-full lg:flex lg:justify-between">
+                <section>
+                  <p>Bachelors in Information Technology</p>
+                  <p>University of Pretoria</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2018 - 2020</p>
+                    <p>Incomplete</p>
+                </section>
+            </section>
+
+            <section className="columns-2 lg:columns-2 w-full lg:flex lg:justify-between">
+                <section>
+                  <p>National Certificate In Information Technology</p>
+                  <p>Umuzi Photo Club</p>
+               
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2022 - 2023</p>
+                    <p>Completed</p>
+                </section>
             </section>
           </section>
         </section>
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Work Experience</h1>
-          <section className="flex flex-col px-2 my-2 space-y-2">
-            <section className="flex flex-col-3 space-x-2 w-7/8">
-                <p className="w-2/5">Field Worker </p>
-                <p className="w-1/5">2022 - 2022</p>
-                <p className="w-1/5">Statistics SA</p>
-                <p className="w-1/5"></p>
+          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-20">
+            <section className="columns-2 lg:columns-2 w-full flex justify-between">
+                <section className="w-full lg:w-3/4">
+                  <p>Software Developer Apprentice</p>
+                  <p>Umuzi Photo Club</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2022 - 2023</p>
+                </section>
             </section>
 
-            <section className="flex flex-col-3 space-x-2 w-7/8">
-                <p className="w-2/5">Software Developer Apprentice</p>
-                <p className="w-1/5">2022 - 2023 </p>
-                <p className="w-1/5">Umuzi Photo Club</p>
-                <p className="w-1/5"></p>
+            <section className="columns-2 lg:columns-2 w-full flex justify-between">
+                <section className="w-full lg:w-3/4">
+                  <p>Software Developer Intern</p>
+                  <p>Umuzi Photo Club</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2023 - 2023</p>
+                </section>
             </section>
 
-            <section className="flex flex-col-3 space-x-2 w-7/8">
-                <p className="w-2/5">Software Developer Intern</p>
-                <p className="w-1/5">2023 - 2023</p>
-                <p className="w-1/5">Umuzi Photo Club</p>
-                <p className="w-1/5"></p>
+            <section className="columns-2 lg:columns-2 w-full flex justify-between">
+                <section className="w-full lg:w-3/4">
+                  <p>Junior Software Developer</p>
+                  <p>Umuzi Photo Club</p>
+                </section>
+
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2023 - 2024</p>
+                </section>
             </section>
 
-            <section className="flex flex-col-3 space-x-2 w-7/8">
-                <p className="w-2/5">Junior Software Developer</p>
-                <p className="w-1/5">2023 - 2024</p>
-                <p className="w-1/5">Umuzi Photo Club</p>
-                <p className="w-1/5"></p>
+            <section className="columns-2 lg:columns-2 w-full flex justify-between">
+                <section className="w-full lg:w-3/4">
+                  <p>Intermediate Software Developer</p>
+                  <p>Umbono Cloud Services</p>
+                </section>
 
-            </section>
-
-            <section className="flex flex-col-3 space-x-2 w-7/8">
-                <p className="w-2/5">Intermediate Software Developer</p>
-                <p className="w-1/5">2024 - Present</p>
-                <p className="w-1/5">Umbono Cloud Services</p>
-                <p className="w-1/5"></p>
+                <section className="w-full lg:w-1/4 grid justify-end">
+                    <p>2024 - Present</p>
+                </section>
             </section>
           </section>
         </section>
@@ -128,8 +164,8 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6">
           <h1>Skills</h1>
           <section className="flex flex-col px-2 my-2 space-y-2">
-            <p>Frontend: HTML, CSS, Tailwind, React</p>
-            <p>Backend: Javascript, Typescript, Express, Python, Flask, FastAPI, Django REST</p>
+            <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
+            <p>Backend: Express, Python, Flask, FastAPI, Django REST</p>
             <p>Databases: MySQL, Postgres, MongoDB, Redis</p>
             <p>Messaging Queues: RabbitMq, Kafka</p>
             <p>Cloud: AWS, GCP</p>
