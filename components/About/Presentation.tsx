@@ -40,7 +40,7 @@ interface AboutProps {
 const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo }) => {
   return (
     <>
-      <section className="flex flex-col w-full lg:w-10/11 xl:w-6/11 space-y-2 text-xs text-gray-600">
+      <section className="flex flex-col w-full lg:w-10/11 xl:w-8/11 space-y-2 text-xs text-gray-600">
         <section className="grid justify-center bg-white/80 rounded-md border border-gray-200 py-3 px-4">
           <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-3/5 justify-self-center">
             <p>He is a patient, open-minded, honest, and hardworking individual who enjoys seeking out problems and solving them. Though a bit shy at first, he warms up over time and communicates with confidence. He is passionate about technology, especially software development.</p>
@@ -145,7 +145,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
                   </section>
 
                   <section className="flex flex-col items-center justify-center">
-                    <Wrestler className="w-10 h-10 md:w-10 md:h-15"/>
+                    <Wrestler className="w-8 h-10 md:w-8 md:h-15"/>
                     <p>Lucha</p>
                   </section>
                 </section>
@@ -160,13 +160,13 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
               <section className="mt-1 space-y-2 text-green-600">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
-                    <Jogging className="w-10 h-10 md:w-10 md:h-15" />
+                    <Jogging className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Jogging</p>
                   </section>
 
 
                   <section className="flex flex-col items-center justify-center">
-                    <Stretching className="w-10 h-10 md:w-10 md:h-15" />
+                    <Stretching className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Stretching</p>
                   </section>
                 </section>
@@ -180,17 +180,17 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
               <section className="mt-1 space-y-2 text-green-600">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
-                    <Bread className="w-10 h-10 md:w-10 md:h-15" />
+                    <Bread className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Bread</p>
                   </section>
 
                   <section className="flex flex-col items-center justify-center">
-                    <Cake className="w-10 h-10 md:w-10 md:h-15" />
+                    <Cake className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Cake</p>
                   </section>
 
                   <section className="flex flex-col items-center justify-center">
-                    <Tea className="w-10 h-10 md:w-10 md:h-15" />
+                    <Tea className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Tea</p>
                   </section>
                   
@@ -207,22 +207,22 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
               <section className="mt-1 space-y-1 text-green-600">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
-                    <SuperHero className="w-10 h-10 md:w-10 md:h-15" />
+                    <SuperHero className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Heroes</p>
                   </section>
 
                   <section className="flex flex-col items-center justify-center">
-                    <Horror className="w-10 h-10 md:w-10 md:h-15" />
+                    <Horror className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Horror</p>
                   </section>
                   
                   <section className="flex flex-col items-center justify-center">
-                    <Naruto className="w-10 h-10 md:w-10 md:h-15" />
+                    <Naruto className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Manga</p>
                   </section>
 
                   <section className="flex flex-col items-center justify-center">
-                    <DragonBall className="w-10 h-10 md:w-10 md:h-15" />
+                    <DragonBall className="w-8 h-10 md:w-8 md:h-15" />
                     <p>Anime</p>
                   </section>
                 </section>
