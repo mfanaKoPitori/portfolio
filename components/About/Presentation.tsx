@@ -1,5 +1,7 @@
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { Mail, Linkedin, Github } from "lucide-react";
 
 interface EducationInstitutionProp {
   school_name: string;
@@ -23,41 +25,41 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
   return (
     <>
       <section className="flex flex-col w-full md:w-full lg:7/11 xl:w-8/11 space-y-2 text-xs text-gray-600">
-        <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-3 px-4 space-y-4">
-          <section className="flex flex-col px-2 space-y-1">
-            <p>Raymond Mawina is an patient, open-minded, honest, hardworking individual.</p>
-            <p>He likes seeking out problems and solving them.</p>
-            <p>He is a bit shy, but with time he warms to you and starts communicating with confidence.</p>
-            <p>He is passionable about tech, particularly software development.</p>
+        <section className="grid justify-center bg-white/80 rounded-md border border-gray-200 py-3 px-4">
+          <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-2/5 justify-self-center">
+            <p>He is a patient, open-minded, honest, and hardworking individual who enjoys seeking out problems and solving them. Though a bit shy at first, he warms up over time and communicates with confidence. He is passionate about technology, especially software development.</p>
           </section>
+          
+          <section className="grid sm:flex justify-self-center space-x-2 lg:space-x-8 w-fit p-2">
+            <Link
+              href="mailto:rmawina@gmail.com"
+              className="flex gap-0.5 items-center text-green-500 text-md hover:underline"
+            >
+              <Mail size={12} />
+              rmawina@gmail.com
+            </Link>
 
-          <section className="flex flex-col px-2 space-x-2 w-1/4 space-y-4">
-            <section className="flex flex-col space-x-1">
-              <p>0715666626</p>
-              <p>rmawina@gmail.com</p>
-            </section>
+            <Link
+              href="https://www.linkedin.com/in/raymond-mawina"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-0.5 items-center text-green-500 text-md hover:underline"
+            >
+              <Linkedin size={12} />
+              linkedin.com/in/raymond-mawina
+            </Link>
 
-            <section className="flex flex-row justify-between space-x-2">
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" text-amber-500 text-md hover:underline"
-              >
-                Linkedin
-              </a>
-
-              <a
-                href="https://www.github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className=" text-amber-500 text-md hover:underline"
-              >
-                Github
-              </a>
-            
-            </section>
+            <Link
+              href="https://github.com/ramoniee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-0.5 items-center text-green-500 text-md hover:underline"
+            >
+              <Github size={12} />
+              github.com/ramoniee
+            </Link>
           </section>
+      
         </section>
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
