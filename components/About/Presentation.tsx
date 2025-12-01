@@ -26,7 +26,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
     <>
       <section className="flex flex-col w-full lg:w-10/11 xl:w-6/11 space-y-2 text-xs text-gray-600">
         <section className="grid justify-center bg-white/80 rounded-md border border-gray-200 py-3 px-4">
-          <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-2/5 justify-self-center">
+          <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-3/5 justify-self-center">
             <p>He is a patient, open-minded, honest, and hardworking individual who enjoys seeking out problems and solving them. Though a bit shy at first, he warms up over time and communicates with confidence. He is passionate about technology, especially software development.</p>
           </section>
           
