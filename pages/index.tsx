@@ -7,7 +7,7 @@ import NavigationTabs from "../components/NavigationTabs/Index";
 import About from "@/components/About/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["About","Projects","Experiments", "Analytics", "Reading"]);
+  const [buttonList, _] = useState(["About","Projects","Experiments"]);
 
   const [activeButton, setActiveButton] = useState<string>("About");
   const handleButtonClick = (item: string) => {

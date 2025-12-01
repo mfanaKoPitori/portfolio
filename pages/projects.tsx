@@ -7,7 +7,7 @@ import Projects from "../components/Projects/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["About","Projects","Experiments", "Analytics", "Reading"]);
+  const [buttonList, _] = useState(["About","Projects","Experiments"]);
 
   const [activeButton, setActiveButton] = useState<string>("Projects");
   const handleButtonClick = (item: string) => {
