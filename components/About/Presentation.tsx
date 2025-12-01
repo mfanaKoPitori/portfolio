@@ -8,7 +8,7 @@ interface AboutProps {
 const Presentation: React.FC<AboutProps> = ({ name }) => {
   return (
     <>
-      <section className="flex flex-col w-full lg:w-6/11 space-y-2 text-xs text-gray-600">
+      <section className="flex flex-col w-full md:w-full lg:7/11 xl:w-8/11 space-y-2 text-xs text-gray-600">
         <section className="flex flex-col lg:flex-row justify-between bg-white/80 rounded-md border border-gray-200 py-3 px-4 space-y-4">
           <section className="flex flex-col px-2 space-y-1">
             <p>Raymond Mawina is an patient, open-minded, honest, hardworking individual.</p>
@@ -48,15 +48,15 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
           <h1 className="font-bold">Educational History</h1>
-          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-2">
-            <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
+          <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
+            <section className="bg-gray-400/10 p-2 rounded-md columns-2 w-full flex justify-between">
                 <section>
                   <p className="font-semibold">Mathematics and Science</p>
                   <p>Primary School</p>
                 </section>
 
                 <section className="w-1/3 lg:w-1/4 grid justify-end">
-                    <p className="bg-green-400/10 px-1 w-fit h-fit rounded-md text-green-600">Completed</p>
+                    <p className="bg-green-400/10 px-1 w-fit rounded-md text-green-600">Completed</p>
                     <p className="px-1">2005 - 2011</p>
                 </section>
             </section>
@@ -75,7 +75,7 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
                 <section>
-                  <p className="font-semibold">Bachelors in Information Technology</p>
+                  <p className="font-semibold">Bachelors in IT</p>
                   <p>University of Pretoria</p>
                 </section>
 
@@ -102,47 +102,47 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
 
         <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
           <h1 className="font-bold">Work Experience</h1>
-          <section className="columns-1 lg:columns-2 px-2 my-2 space-y-2 w-full lg:gap-2">
-            <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
-                <section className="w-full lg:w-3/4">
+          <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
+            <section className="bg-gray-400/10 p-2 rounded-md columns-2 w-full flex justify-between">
+                <section className="w-full md:w-3/4">
                   <p className="font-semibold">Software Developer Apprentice</p>
                   <p>Umuzi Photo Club</p>
                 </section>
 
-                <section className="w-full lg:w-1/4 grid justify-end">
+                <section className="w-full md:w-1/4 grid justify-end">
                     <p>2022 - 2023</p>
                 </section>
             </section>
 
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
-                <section className="w-full lg:w-3/4">
+                <section className="w-full md:w-3/4">
                   <p className="font-semibold">Software Developer Intern</p>
                   <p>Umuzi Photo Club</p>
                 </section>
 
-                <section className="w-full lg:w-1/4 grid justify-end">
+                <section className="w-full md:w-1/4 grid justify-end">
                     <p>2023 - 2023</p>
                 </section>
             </section>
 
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
-                <section className="w-full lg:w-3/4">
+                <section className="w-full md:w-3/4">
                   <p className="font-semibold">Junior Software Developer</p>
                   <p>Umuzi Photo Club</p>
                 </section>
 
-                <section className="w-full lg:w-1/4 grid justify-end">
+                <section className="w-full md:w-1/4 grid justify-end">
                     <p>2023 - 2024</p>
                 </section>
             </section>
 
             <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
-                <section className="w-full lg:w-3/4">
+                <section className="w-full md:w-3/4">
                   <p className="font-semibold">Intermediate Software Developer</p>
                   <p>Umbono Cloud Services</p>
                 </section>
 
-                <section className="w-full lg:w-1/4 grid justify-end">
+                <section className="w-full md:w-1/4 grid justify-end">
                     <p>2024 - Present</p>
                 </section>
             </section>
