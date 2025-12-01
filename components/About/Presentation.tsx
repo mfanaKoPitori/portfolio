@@ -61,15 +61,15 @@ const Presentation: React.FC<AboutProps> = ({ name }) => {
                 </section>
             </section>
 
-            <section className="bg-gray-400/10 p-2 rounded-md columns-2 lg:columns-2 w-full flex justify-between">
+            <section className="bg-gray-400/10 p-2 rounded-md sm:columns-1 columns-2 lg:columns-2 w-full grid md:flex justify-between">
                 <section>
                   <p className="font-semibold">Mathematics and Science</p>
                   <p>High School</p>
                 </section>
 
-                <section className="w-1/3  lg:w-1/4 grid justify-end">
-                    <p className="bg-green-400/10 px-1 w-fit h-fit rounded-md text-green-600">Completed</p>
-                    <p className="px-1">2012 - 2016</p>   
+                <section className="w-full md:w-1/3 lg:w-1/4 grid md:justify-end">
+                    <p className="bg-green-400/10 w-fit h-fit rounded-md text-green-600">Completed</p>
+                    <p className="">2012 - 2016</p>   
                 </section>
             </section>
 
