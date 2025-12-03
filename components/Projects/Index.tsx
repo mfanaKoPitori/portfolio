@@ -17,7 +17,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     {
       name: "Gold Rush Desktop Game",
       pseudo: "gold_rush",
-      tech: "HTML, CSS, React, Redux.",
+      tech: "HTML, CSS, React, grayux.",
       description:
         "Little fun collecting gold bars.",
       link: "https://goldrush.ray-mawina.co.za/",
@@ -25,7 +25,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     {
       name: "Sharp Memory Responsive Website Game",
       pseudo: "sharp_memory",
-      tech: "HTML, CSS, React, Redux.",
+      tech: "HTML, CSS, React, grayux.",
       description:
         "Little fun remembering colors and their positions.",
       link: "https://sharpmemory.ray-mawina.co.za/",
@@ -33,7 +33,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     {
       name: "UpOrDown Pilot Guide Mobile App",
       pseudo: "up_or_down",
-      tech: "React Native, Expo, CSS, React, Redux.",
+      tech: "React Native, Expo, CSS, React, grayux.",
       description:
         "Helps pilot remember if they are ascending or descending.",
       link: "https://drive.google.com/file/d/1uT5KZERjPBtthA0kg54pNX2e4V0N6Mx9/view?usp=drive_link",
@@ -41,7 +41,7 @@ const Projects: React.FC<ProjectInfoProps> = () => {
     {
       name: "TrainTravails Schedule Trace Mobile App",
       pseudo: "train_travails",
-      tech: "React Native, Expo, CSS, React, Redux.",
+      tech: "React Native, Expo, CSS, React, grayux.",
       description:
         "Helps you trace and find when the next train to your destination is coming.",
       link: "https://drive.google.com/file/d/1fF_C2G6dUcSaz7pfpQMQ2hBJSV_AbYD3/view?usp=drive_link",

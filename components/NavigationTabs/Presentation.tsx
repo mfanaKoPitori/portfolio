@@ -23,8 +23,8 @@ const Presentation: React.FC<NavigationTabsInfoProps> = ({
                 href={item === "About" ? "/":`/${item.toLocaleLowerCase()}`}
                 className={`text-sm lg:text-md ${
                   activeButton === item
-                    ? "green-amber-500 text-rose-600/90"
-                    : "text-rose-400/60 hover:text-rose-800"
+                    ? "gray-amber-500 text-gray-600/90"
+                    : "text-gray-400/60 hover:text-gray-800"
                 }`}
                 onClick={() => {
                   if (activeButton !== item) handleButtonClick(item);
