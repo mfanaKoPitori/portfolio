@@ -37,7 +37,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                   <Image
                       src={`/images/projects/${project.pseudo}/${project.pseudo}_1.jpg`}
                       alt={`project ${project.pseudo} image 1`}
-                      className="md:hidden rounded-sm border-2 h-[80px] w-[80px] border-green-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                      className="md:hidden rounded-sm border-2 h-[80px] w-[80px] border-gray-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                       width={80}
                       height={80}
                       draggable={false}
@@ -49,7 +49,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                         key={index}
                         src={`/images/projects/${project.pseudo}/${project.pseudo}_${num}.jpg`}
                         alt={`project ${project.pseudo} image ${num}`}
-                        className="rounded-sm border-2  h-[80px] w-[80px] border-green-400/60 backdrop-blur-md shadow-lg pointer-events-none"
+                        className="rounded-sm border-2  h-[80px] w-[80px] border-gray-400/60 backdrop-blur-md shadow-lg pointer-events-none"
                         width={80}
                         height={80}
                         draggable={false}
@@ -65,7 +65,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-green-500 text-md hover:underline"
+                className=" text-gray-500 text-md hover:underline"
               >
                 Live Project
               </a>
@@ -74,7 +74,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-green-500 text-md hover:underline"
+                className=" text-gray-500 text-md hover:underline"
               >
                 Github Repo
               </a>
@@ -83,7 +83,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-green-500 text-md hover:underline"
+                className=" text-gray-500 text-md hover:underline"
               >
                 Demo Video
               </a>
@@ -92,7 +92,7 @@ const Presentation: React.FC<ProjectInfoProps> = ({ projectList }) => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" text-green-500 text-md hover:underline"
+                className=" text-gray-500 text-md hover:underline"
               >
                 Docs
               </a>
