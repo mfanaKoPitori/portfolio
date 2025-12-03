@@ -26,12 +26,6 @@ export default function Home() {
     <section className="flex flex-col items-center space-y-2 p-3 bg-gray-100 text-xs w-full mx-auto min-h-screen">
       <Header />
 
-      <NavigationTabs
-       activeButton={activeButton}
-       buttonList={buttonList}
-       handleButtonClick={handleButtonClick}
-      />
-
       <main className="flex flex-grow justify-center w-full">
         {<About />}
       </main> 
