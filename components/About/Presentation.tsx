@@ -48,7 +48,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Work Experience</h1>
-          <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
+          <section className="columns-1 md:columns-2 my-2 space-y-2 w-full md:gap-2">
             {workExperienceInfo.map((workExperience) => 
               (<section className="bg-gray-200/10 border border-gray-400/20 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
                   <section className="w-full sm:w-2/3 lg:w-3/4">
@@ -66,7 +66,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Technical Skills</h1>
-          <section className="flex flex-col px-2 my-2 space-y-2 text-gray-600">
+          <section className="flex flex-col my-2 space-y-2 text-gray-600">
             <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
             <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
             <p>Databases: MySQL, Postgres, MongoDB, redis</p>
@@ -77,7 +77,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Educational History</h1>
-          <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
+          <section className="columns-1 md:columns-2 my-2 space-y-2 w-full md:gap-2">
             {educationInfo.map((education) => 
               (<section className="bg-gray-200/10 border border-gray-400/20 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
                   <section className="w-full sm:w-2/3 lg:w-3/4">
