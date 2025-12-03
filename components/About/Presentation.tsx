@@ -40,18 +40,18 @@ interface AboutProps {
 const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo }) => {
   return (
     <>
-      <section className="flex flex-col w-10/11 lg:w-8/11 xl:w-6/11 space-y-2 text-xs text-gray-600">
-        <section className="grid justify-center bg-white/80 rounded-md border border-gray-200 py-3 px-4">
+      <section className="flex flex-col w-10/11 lg:w-8/11 xl:w-6/11 space-y-2 text-xs text-gray-600 p-2">
+        <section className="rounded-md border border-rose-300/20 py-3 px-6 text-gray-600 bg-rose-100/10">
           <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-3/5 justify-self-center">
-            <p>He is a patient, open-minded, honest, and hardworking individual who enjoys seeking out problems and solving them. Though a bit shy at first, he warms up over time and communicates with confidence. He is passionate about technology, especially software development.</p>
+            <p>He is a backend developer with 4 years of work experience. He writes most of his code in node.js and python. He is huge advocate for clean code and test-driven development. He enjoys solving katas in his spare time.  </p>
           </section>
           
-          <section className="grid sm:flex justify-self-center space-x-2 lg:space-x-8 w-fit p-2">
+          <section className="grid sm:flex justify-self-center space-x-2 lg:space-x-8 w-full p-2 space-y-2 lg:space-y-0">
             <Link
               href="mailto:rmawina@gmail.com"
-              className="flex gap-0.5 items-center text-blue-500 text-md hover:underline"
+              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
             >
-              <Mail size={12} />
+              <Mail size={18} color="pink"/>
               rmawina@gmail.com
             </Link>
 
@@ -59,55 +59,55 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
               href="https://www.linkedin.com/in/raymond-mawina"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-0.5 items-center text-blue-500 text-md hover:underline"
+              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
             >
-              <Linkedin size={12} />
-              linkedin.com/in/raymond-mawina
+              <Linkedin size={18} color="pink"/>
+              <p>linkedin.com/in/raymond-mawina</p>
             </Link>
 
             <Link
               href="https://github.com/ramoniee"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-0.5 items-center text-blue-500 text-md hover:underline"
+              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
             >
-              <Github size={12} />
+              <Github size={18} color="pink"/>
               github.com/ramoniee
             </Link>
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
-          <h1 className="font-bold">Work Experience</h1>
+        <section className="rounded-md border border-rose-300/20 py-3 px-6 text-gray-500/90 bg-rose-100/10">
+          <h1 className="font-mono">Work Experience</h1>
           <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
             {workExperienceInfo.map((workExperience) => 
-              (<section className="bg-gray-400/10 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
+              (<section className="bg-rose-200/10 border border-rose-400/20 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
                   <section className="w-full sm:w-2/3 lg:w-3/4">
-                    <p className="font-semibold">{workExperience.role}</p>
+                    <p className="text-gray-600">{workExperience.role}</p>
                     <p>{workExperience.company_name}</p>
                   </section>
 
                   <section className="w-full sm:w-1/3 lg:w-1/3 grid sm:justify-end">
-                      <p className="px-2">{workExperience.period}</p>
+                      <p>{workExperience.period}</p>
                   </section>
               </section>)
             )}
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
-          <h1 className="font-bold">Educational History</h1>
+        <section className="rounded-md border border-rose-300/20 py-3 px-6 text-gray-500/90 bg-rose-100/10">
+          <h1 className="font-mono">Educational History</h1>
           <section className="columns-1 md:columns-2 px-2 my-2 space-y-2 w-full md:gap-2">
             {educationInfo.map((education) => 
-              (<section className="bg-gray-400/10 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
+              (<section className="bg-rose-200/10 border border-rose-400/20 p-2 rounded-md columns-1 sm:columns-2 lg:columns-2 w-full grid sm:flex sm:justify-between">
                   <section className="w-full sm:w-2/3 lg:w-3/4">
-                    <p className="font-semibold">{education.course}</p>
+                    <p className="text-gray-600">{education.course}</p>
                     <p>{education.school_name}</p>
                   </section>
 
                   <section className="w-full sm:w-1/3 lg:w-1/3 grid sm:justify-end">
-                      <p className={`w-fit px-2 rounded-full ${education.completion_status ? "bg-green-700/10 text-green-600":"bg-red-700/10 text-red-600"}`}>{education.completion_status ? "Completed": "Incompleted"}</p>
-                      <p className="px-2">{education.period}</p>
+                      <p className={`w-fit rounded-full ${education.completion_status ? "text-pink-400/80":""}`}>{education.completion_status ? "Completed": "Incomplete"}</p>
+                      <p>{education.period}</p>
                   </section>
               </section>
               )
@@ -117,9 +117,9 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
 
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
-          <h1 className="font-bold">Technical Skills</h1>
-          <section className="flex flex-col px-2 my-2 space-y-2">
+        <section className="rounded-md border border-rose-300/20 py-3 px-6 text-gray-500/90 bg-rose-100/10">
+          <h1 className="font-mono">Technical Skills</h1>
+          <section className="flex flex-col px-2 my-2 space-y-2 text-gray-600">
             <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
             <p>Backend: Express, Python, Flask, FastAPI, Django REST</p>
             <p>Databases: MySQL, Postgres, MongoDB, Redis</p>
@@ -128,16 +128,14 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
           </section>
         </section>
 
-        <section className="bg-white/80 rounded-md border border-gray-200 py-3 px-6 text-gray-600">
-          <h1 className="font-bold mb-3">Hobbies and Interests</h1>
+        <section className="rounded-md border border-rose-300/20 py-3 px-6 text-gray-500/90 bg-rose-100/10">
+          <h1 className="font-mono mb-3">Hobbies and Interests</h1>
 
           <section className="columns-1 md:columns-4 px-2 space-y-4">
 
             {/* --- Sports --- */}
             <section className="break-inside-avoid">
-              <h2 className="font-medium justify-self-center">Sports</h2>
-
-              <section className="mt-1 space-y-2 text-blue-600 justify-self-center">
+              <section className="mt-1 space-y-2 justify-self-center">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
                     <Formular1 className="w-10 h-10 md:w-15 md:h-15" />
@@ -154,10 +152,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
             {/* --- Exercise --- */}
             <section className="break-inside-avoid">
-              <h2 className="font-medium justify-self-center">Exercise</h2>
-
-
-              <section className="mt-1 space-y-2 text-blue-600 justify-self-center">
+              <section className="mt-1 space-y-2 justify-self-center">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
                     <Jogging className="w-8 h-10 md:w-8 md:h-15" />
@@ -175,9 +170,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
             {/* --- Harmonic --- */}
             <section className="break-inside-avoid">
-              <h2 className="font-medium justify-self-center">Harmonic</h2>
-
-              <section className="mt-1 space-y-2 text-blue-600 justify-self-center">
+              <section className="mt-1 space-y-2 justify-self-center">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
                     <Cake className="w-8 h-10 md:w-8 md:h-15" />
@@ -197,9 +190,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
 
             {/* --- Entertainment --- */}
             <section className="break-inside-avoid">
-              <h2 className="font-medium justify-self-center">Entertainment</h2>
-
-              <section className="mt-1 space-y-1 text-blue-600 justify-self-center">
+              <section className="mt-1 space-y-1 justify-self-center">
                 <section className="flex items-start gap-4">
                   <section className="flex flex-col items-center justify-center">
                     <SuperHero className="w-8 h-10 md:w-8 md:h-15" />
