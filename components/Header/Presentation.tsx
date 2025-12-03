@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+
+import { Mail, Linkedin, Github } from "lucide-react";
 
 interface HeaderInfoProps {
   fullname: string;
@@ -10,10 +13,10 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
   return (
     <>
-      <header className="flex flex-col justify-center w-full rounded-md space-x-2 space-y-1 items-center px-2">
+      <header className="grid justify-center md:flex md:justify-between w-10/11 lg:w-8/11 xl:w-6/11 space-x-2 space-y-1 px-2">
         {/* Profile Image */}
         <section
-            className="select-none"
+            className="select-none justify-self-center"
             onContextMenu={(e) => e.preventDefault()}
             onDragStart={(e) => e.preventDefault()}
             onMouseDown={(e) => e.preventDefault()}
@@ -28,10 +31,40 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
             />
        
         </section>
-   
-        <h1 className="text-sm lg:text-lg font-bold text-center text-gray-300">
-          {fullname}
-        </h1>
+
+        <section>
+          <h1 className="text-sm lg:text-lg font-bold text-center text-gray-300">
+            {fullname}
+          </h1>
+
+          <section className="flex justify-center space-x-8 lg:space-x-12 w-full p-2 space-y-2 lg:space-y-0">
+            <Link
+              href="mailto:rmawina@gmail.com"
+              className="flex flex-col items-center text-md hover:underline"
+            >
+              <Mail size={18} color="gray"/>
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/raymond-mawina"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-md hover:underline"
+            >
+              <Linkedin size={18} color="gray"/>
+            </Link>
+
+            <Link
+              href="https://github.com/ramoniee"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-center text-md hover:underline"
+            >
+              <Github size={18} color="gray"/>
+            </Link>
+          </section>
+        </section>
+    
       </header>
     </>
   );
