@@ -46,33 +46,30 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
             <p>He is a backend developer with 4 years of work experience. He writes most of his code in node.js and python. He is huge advocate for clean code and test-driven development. He enjoys solving katas in his spare time.  </p>
           </section>
           
-          <section className="grid sm:flex justify-self-center space-x-2 lg:space-x-8 w-full p-2 space-y-2 lg:space-y-0">
+          <section className="flex justify-center space-x-2 md:space-x-4 lg:space-x-8 w-full p-2 space-y-2 lg:space-y-0">
             <Link
               href="mailto:rmawina@gmail.com"
-              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
+              className="flex flex-col items-center text-md hover:underline"
             >
               <Mail size={18} color="gray"/>
-              rmawina@gmail.com
             </Link>
 
             <Link
               href="https://www.linkedin.com/in/raymond-mawina"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
+              className="flex flex-col items-center text-md hover:underline"
             >
               <Linkedin size={18} color="gray"/>
-              <p>linkedin.com/in/raymond-mawina</p>
             </Link>
 
             <Link
               href="https://github.com/ramoniee"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center text-md hover:underline w-full lg:w-1/3"
+              className="flex flex-col items-center text-md hover:underline"
             >
               <Github size={18} color="gray"/>
-              github.com/ramoniee
             </Link>
           </section>
         </section>
