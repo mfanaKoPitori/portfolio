@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import Header from "../components/Header/Index";
-import Footer from "../components/Footer/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
 import About from "@/components/About/Index";
 
@@ -37,7 +36,6 @@ export default function Home() {
         {<About />}
       </main> 
 
-      <Footer />
     </section>
   );
 }
