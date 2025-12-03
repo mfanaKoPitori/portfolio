@@ -21,7 +21,7 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
             <Image
               src="/images/headshot_pixel_nice_2.png"
               alt={`Headshot of ${fullname}`}
-              className="rounded-full border-2 border-red-300/80 backdrop-blur-sm shadow-lg pointer-events-none"
+              className="rounded-full border-2 border-rose-300/40 backdrop-blur-sm shadow-lg pointer-events-none"
               width={60}
               height={60}
               draggable={false}
@@ -29,7 +29,7 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
        
         </section>
    
-        <h1 className="text-sm lg:text-lg font-bold text-center  text-pink-400/80">
+        <h1 className="text-sm lg:text-lg font-bold text-center text-rose-300">
           {fullname}
         </h1>
       </header>
