@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import Header from "../components/Header/Index";
-import Footer from "../components/Footer/Index";
 import Projects from "../components/Projects/Index";
 import NavigationTabs from "../components/NavigationTabs/Index";
 
@@ -36,8 +35,6 @@ export default function Home() {
       <main className="flex flex-grow w-fit">
         <p>Experiments page under construction</p>
       </main> 
-
-      <Footer />
     </section>
   );
 }
