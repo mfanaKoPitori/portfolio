@@ -46,7 +46,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
             <p>He is a backend developer with 4 years of work experience. He writes most of his code in node.js and python. He is huge advocate for clean code and test-driven development. He enjoys solving katas in his spare time.  </p>
           </section>
           
-          <section className="flex justify-center space-x-2 md:space-x-4 lg:space-x-8 w-full p-2 space-y-2 lg:space-y-0">
+          <section className="flex justify-center space-x-8 lg:space-x-12 w-full p-2 space-y-2 lg:space-y-0">
             <Link
               href="mailto:rmawina@gmail.com"
               className="flex flex-col items-center text-md hover:underline"
