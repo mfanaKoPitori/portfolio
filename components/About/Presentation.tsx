@@ -15,6 +15,7 @@ import SuperHero from "@/icons/superhero.svg";
 import Horror from "@/icons/horror.svg";
 import Naruto from "@/icons/naruto.svg";
 import DragonBall from "@/icons/dragon_ball.svg";
+import Header from "../Header/Index";
 
 
 
@@ -39,7 +40,9 @@ interface AboutProps {
 const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo }) => {
   return (
     <>
-      <section className="flex flex-col w-10/11 lg:w-8/11 xl:w-6/11 space-y-4 text-xs text-gray-600 p-2">
+      <section className="flex flex-col w-full p-2 lg:w-8/11 xl:w-6/11 space-y-4 text-xs text-gray-600  bg-gray-100">
+        <Header />
+
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-600 bg-gray-100/10">
           <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-3/5 justify-self-center">
             <p>He is a backend developer with 4 years of work experience. He writes most of his code in node.js and python. He is huge advocate for clean code and test-driven development. He enjoys solving katas in his spare time.  </p>
