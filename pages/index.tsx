@@ -23,8 +23,9 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center space-y-2 p-3 bg-gray-100 text-xs w-full mx-auto min-h-screen">
-      <Header />
+    <section className="flex flex-col items-center space-y-2 lg:p-3 bg-gray-800 text-xs w-full mx-auto min-h-screen">
+
+
 
       <main className="flex flex-grow justify-center w-full">
         {<About />}

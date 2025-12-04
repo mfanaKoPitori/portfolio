@@ -13,7 +13,7 @@ interface HeaderInfoProps {
 const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
   return (
     <>
-      <header className="grid justify-center md:flex md:justify-between w-10/11 lg:w-8/11 xl:w-6/11 space-x-2 space-y-1 px-2">
+      <header className="grid justify-center md:flex md:justify-between space-x-2 space-y-1 px-2 bg-gray-100">
         {/* Profile Image */}
         <section
             className="select-none justify-self-center"
