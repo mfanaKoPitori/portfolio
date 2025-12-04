@@ -44,7 +44,7 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
         <Header />
 
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-600 bg-gray-100/10">
-          <section className="p-2 space-y-1 text-wrap text-center w-full lg:w-3/5 justify-self-center">
+          <section className="p-2 space-y-1 text-wrap text-center w-full sm:w-3/5 justify-self-center">
             <p>He is a backend developer with 4 years of work experience. He writes most of his code in node.js and python. He is huge advocate for clean code and test-driven development. He enjoys solving katas in his spare time.  </p>
           </section>
         </section>
