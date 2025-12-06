@@ -68,13 +68,88 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
         </section>
 
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
+          <h1 className="font-mono">Projects</h1>
+          <section className="flex space-x-2 py-2">
+            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10 w-1/2">
+              <h1 className="font-mono">Project #1</h1>
+              <section className="flex flex-col space-y-2 text-gray-600">
+                <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
+                <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
+                <p>Databases: MySQL, Postgres, MongoDB, redis</p>
+                <p>Messaging Queues: RabbitMq, Kafka</p>
+                <p>Cloud: AWS, GCP</p>
+              </section>
+            </section>
+
+            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10 w-1/2">
+              <h1 className="font-mono">Project #2</h1>
+              <section className="flex flex-col space-y-2 text-gray-600">
+                <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
+                <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
+                <p>Databases: MySQL, Postgres, MongoDB, redis</p>
+                <p>Messaging Queues: RabbitMq, Kafka</p>
+                <p>Cloud: AWS, GCP</p>
+              </section>
+            </section>
+          </section>
+          <section className="flex justify-end space-x-4">
+            <button>Prev</button>
+            <button>Next</button>
+          </section>
+        </section>
+
+        <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Technical Skills</h1>
-          <section className="flex flex-col my-2 space-y-2 text-gray-600">
-            <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
-            <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
-            <p>Databases: MySQL, Postgres, MongoDB, redis</p>
-            <p>Messaging Queues: RabbitMq, Kafka</p>
-            <p>Cloud: AWS, GCP</p>
+          <section className="grid grid-cols-2 my-2 space-y-2">
+            <section className="grid space-y-1">
+              <p className="w-fit text-gray-600">Frontend</p>
+              <section className="flex space-x-2">
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">HTML</p>
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">CSS</p>
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">Tailwind</p>
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">Javascript</p>
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">Typescript</p>
+                <p className="bg-gray-300/20 border-1 border-gray-400/40 rounded-full px-1 py-0.5">React</p>
+              </section>
+            </section>
+
+            <section className="grid space-y-1">
+              <p className="w-fit text-gray-600">Backend</p>
+              <section className="flex space-x-2">
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Node.js</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Express</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Python</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Flask</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">FastAPI</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Django</p>
+              </section>
+            </section>
+    
+            <section className="grid space-y-1">
+              <p className="w-fit text-gray-600">Databases</p>
+              <section className="flex space-x-2">
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">MySQL</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Postgres</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">MongoDB</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Redis</p>
+              </section>
+            </section>
+
+            <section className="grid space-y-1">
+              <p className="w-fit text-gray-600">Messaging Queues</p>
+              <section className="flex space-x-2">
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Rabbitmq</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">Kafka</p>
+              </section>
+            </section>
+
+            <section className="grid space-y-1">
+              <p className="w-fit text-gray-600">Cloud</p>
+              <section className="flex space-x-2">
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">AWS</p>
+                <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">GCP</p>
+              </section>
+            </section>
           </section>
         </section>
 
@@ -95,44 +170,6 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo 
               </section>
               )
             )}
-          </section>
-        </section>
-
-        <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
-          <h1 className="font-mono">Projects</h1>
-          <section className="grid space-x-2 space-y-2 py-2">
-            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
-              <h1 className="font-mono">Project #1</h1>
-              <section className="flex flex-col space-y-2 text-gray-600">
-                <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
-                <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
-                <p>Databases: MySQL, Postgres, MongoDB, redis</p>
-                <p>Messaging Queues: RabbitMq, Kafka</p>
-                <p>Cloud: AWS, GCP</p>
-              </section>
-            </section>
-
-            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
-              <h1 className="font-mono">Project #2</h1>
-              <section className="flex flex-col space-y-2 text-gray-600">
-                <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
-                <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
-                <p>Databases: MySQL, Postgres, MongoDB, redis</p>
-                <p>Messaging Queues: RabbitMq, Kafka</p>
-                <p>Cloud: AWS, GCP</p>
-              </section>
-            </section>
-
-            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
-              <h1 className="font-mono">Project #3</h1>
-              <section className="flex flex-col space-y-2 text-gray-600">
-                <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
-                <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
-                <p>Databases: MySQL, Postgres, MongoDB, redis</p>
-                <p>Messaging Queues: RabbitMq, Kafka</p>
-                <p>Cloud: AWS, GCP</p>
-              </section>
-            </section>
           </section>
         </section>
       </section>
