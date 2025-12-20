@@ -19,6 +19,16 @@ interface WorkExperienceProp {
   period: string;
 }
 
+interface techSkillProp {
+  name: string;
+}
+
+interface techSkillCategoryProp {
+  category: string;
+  skills: techSkillProp[];
+}
+
+
 interface AboutPageProps {
 }
 
@@ -51,21 +61,11 @@ const About: React.FC<AboutPageProps> = () => {
     }
   ]);
 
-    const [workExperienceInfo, setWorkExperienceInfo] = useState<WorkExperienceProp[]>([
-      {
-        role: "Software Developer Apprentice",
-        company_name: "Umuzi Photo Club",
-        period: "2022 - 2023",
-      },
-      {
-        role: "Software Developer Intern",
-        company_name: "Umuzi Photo Club",
-        period: "2023 - 2023",
-      },
+  const [workExperienceInfo, setWorkExperienceInfo] = useState<WorkExperienceProp[]>([
       {
         role: "Junior Software Developer",
         company_name: "Umuzi Photo Club",
-        period: "2023 - 2024",
+        period: "2022 - 2024",
       },    
       {
         role: "Intermediate Software Developer",
@@ -73,7 +73,30 @@ const About: React.FC<AboutPageProps> = () => {
         period: "2024 - Present",
       }
   ]);
-  return <Presentation educationInfo={educationInfo} workExperienceInfo={workExperienceInfo}/>;
+
+  const [techSkillsInfo, setTechSkillsInfo] = useState<techSkillCategoryProp[]>([
+    {
+      category: "Frontend",
+      skills: [{name: "HTML"}, {name: "CSS"}, {name: "Javascript"}, {name: "Tailwind"}, {name: "Typescript"}, {name: "React"}]
+    },
+    {
+      category: "Backend",
+      skills: [{name: "Node.js"}, {name: "Express"}, {name: "Python"}, {name: "Flask"}, {name: "Django"}, {name: "FastAPI"}]
+    },
+    {
+      category: "Databases",
+      skills: [{name: "MySQL"}, {name: "Postgres"}, {name: "MongoDB"}, {name: "Redis"}]
+    },
+    {
+      category: "Messaging Queues",
+      skills: [{name: "RabbitMQ"}, {name: "Kafka"}]
+    },
+    {
+      category: "Cloud",
+      skills: [{name: "AWS Lambda"},{name: "AWS API Gateway"}, {name: "AWS S3"}, {name: "AWS SQS"}, {name: "AWS EC2"}, {name: "AWS Elastic Beanstalk"}]
+    }
+  ]);
+  return <Presentation educationInfo={educationInfo} workExperienceInfo={workExperienceInfo} techSkillsInfo={techSkillsInfo}/>;
 };
 
 export default About;
