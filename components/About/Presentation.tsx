@@ -72,8 +72,8 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo,
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Projects</h1>
           <section className="columns-1 flex flex-col md:columns-2 md:flex md:flex-row gap-x-2 py-2 gap-y-2">
-            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10 w-full md:w-1/2">
-              <h1 className="font-mono">Project #1</h1>
+            <section className="rounded-md border border-gray-300/20 p-2 text-gray-500/90 bg-gray-100/10 w-full md:w-1/2">
+              <h1 className="">Project #1</h1>
               <section className="flex flex-col gap-y-2 text-gray-600">
                 <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
                 <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
@@ -83,8 +83,8 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo,
               </section>
             </section>
 
-            <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10 w-full md:w-1/2">
-              <h1 className="font-mono">Project #2</h1>
+            <section className="rounded-md border border-gray-300/20 p-2 text-gray-500/90 bg-gray-100/10 w-full md:w-1/2">
+              <h1 className="">Project #2</h1>
               <section className="flex flex-col gap-y-2 text-gray-600">
                 <p>Frontend: HTML, CSS, Tailwind,  Javascript, Typescript, React</p>
                 <p>Backend: Node.js, Express, Python, Flask, FastAPI, Django REST</p>
