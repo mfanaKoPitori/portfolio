@@ -103,12 +103,12 @@ const Presentation: React.FC<AboutProps> = ({ educationInfo, workExperienceInfo,
         <section className="rounded-md border border-gray-300/20 py-3 px-6 text-gray-500/90 bg-gray-100/10">
           <h1 className="font-mono">Technical Skills</h1>
           <section className="grid md:grid-cols-2 my-2 space-y-2">
-            {techSkillsInfo.map((techSkillCategory) => (
-              <section className="grid space-y-1">
+            {techSkillsInfo.map((techSkillCategory, index) => (
+              <section key={index} className="grid space-y-1">
                 <p className="w-fit text-gray-600">{techSkillCategory.category}</p>
                 <section className="flex flex-wrap gap-x-1 gap-y-1">
-                  {techSkillCategory.skills.map((skill) => (
-                    <p className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">{skill.name}</p>  
+                  {techSkillCategory.skills.map((skill, index) => (
+                    <p key={index} className="bg-gray-300/20 border-1 border-gray-300/60 rounded-full px-1 py-0.5">{skill.name}</p>  
                   ))}
                 </section>
               </section>    
