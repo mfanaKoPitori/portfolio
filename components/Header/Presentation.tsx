@@ -10,26 +10,25 @@ interface HeaderInfoProps {
   role: string;
 }
 
-const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
+const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role }) => {
   return (
     <>
       <header className="grid justify-center md:flex md:justify-between space-x-2 space-y-1 px-2 bg-gray-100">
         {/* Profile Image */}
         <section
-            className="select-none justify-self-center"
-            onContextMenu={(e) => e.preventDefault()}
-            onDragStart={(e) => e.preventDefault()}
-            onMouseDown={(e) => e.preventDefault()}
-          >
-            <Image
-              src="/images/headshot_pixel_nice_2.png"
-              alt={`Headshot of ${fullname}`}
-              className="rounded-full border-2 border-gray-300/40 backdrop-blur-sm shadow-lg pointer-events-none"
-              width={60}
-              height={60}
-              draggable={false}
-            />
-       
+          className="select-none justify-self-center"
+          onContextMenu={(e) => e.preventDefault()}
+          onDragStart={(e) => e.preventDefault()}
+          onMouseDown={(e) => e.preventDefault()}
+        >
+          <Image
+            src="/images/headshot_pixel_nice_2.png"
+            alt={`Headshot of ${fullname}`}
+            className="rounded-full border-2 border-gray-300/40 backdrop-blur-sm shadow-lg pointer-events-none"
+            width={60}
+            height={60}
+            draggable={false}
+          />
         </section>
 
         <section>
@@ -42,7 +41,7 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
               href="mailto:rmawina@gmail.com"
               className="flex flex-col items-center text-md hover:underline"
             >
-              <Mail size={18} color="gray"/>
+              <Mail size={18} color="gray" />
             </Link>
 
             <Link
@@ -51,20 +50,19 @@ const Presentation: React.FC<HeaderInfoProps> = ({ fullname, bio, role}) => {
               rel="noopener noreferrer"
               className="flex flex-col items-center text-md hover:underline"
             >
-              <Linkedin size={18} color="gray"/>
+              <Linkedin size={18} color="gray" />
             </Link>
 
             <Link
-              href="https://github.com/ramoniee"
+              href="https://github.com/mfanaKoPitori"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center text-md hover:underline"
             >
-              <Github size={18} color="gray"/>
+              <Github size={18} color="gray" />
             </Link>
           </section>
         </section>
-    
       </header>
     </>
   );
