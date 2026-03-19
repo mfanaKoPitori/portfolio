@@ -2,28 +2,25 @@ import { useState, useEffect } from "react";
 import About from "@/components/About/Index";
 
 export default function Home() {
-  const [buttonList, _] = useState(["About","Projects","Experiments"]);
+  const [buttonList, _] = useState(["About", "Projects", "Experiments"]);
 
   const [activeButton, setActiveButton] = useState<string>("About");
   const handleButtonClick = (item: string) => {
     setActiveButton(item === activeButton ? "" : item);
-      fetch("/api/tracker")
-      .then(res => res.json())
-      .then(data => console.log(`IP: ${data.ip} visited ${item}`));
+    fetch("/api/tracker")
+      .then((res) => res.json())
+      .then((data) => console.log(`IP: ${data.ip} visited ${item}`));
   };
 
   useEffect(() => {
     fetch("/api/tracker")
-      .then(res => res.json())
-      .then(data => console.log(`IP: ${data.ip} visited website`));
+      .then((res) => res.json())
+      .then((data) => console.log(`IP: ${data.ip} visited website`));
   }, []);
 
   return (
     <section className="flex flex-col items-center space-y-2 lg:p-3 bg-gray-800 text-xs w-full mx-auto min-h-screen">
-      <main className="flex flex-grow justify-center w-full">
-        {<About />}
-      </main> 
-
+      <main className="flex grow justify-center w-full">{<About />}</main>
     </section>
   );
 }
